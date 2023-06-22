@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useState } from "react";
 
-const Server = ({ isActive, serverName, serverIcon, navigate }) => {
+const Server = ({ isActive, serverName, serverIcon }) => {
   const [hoveredServer, setHoveredServer] = useState(false);
 
   return (
