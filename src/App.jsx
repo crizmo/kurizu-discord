@@ -3,13 +3,13 @@ import { Box } from "@mui/material";
 import SidebarWidget from "./widgets/sidebar/sidebarWidget"
 
 import ChannelNavbar from "./widgets/navbar/channelNav";
-import ContentNavbar from "./widgets/navbar/contentNav";
 import Navbar from "./widgets/navbar/navbar";
 
 import ChannelBar from "./widgets/channelBar/channelsBar";
-import ContentWidget from "./widgets/content/contentWidget";
 
 import Content from "./components/Routes/content.jsx";
+
+import UserBar from "./widgets/userbar/userbar";
 
 function App() {
   return (
@@ -23,9 +23,16 @@ function App() {
             <ChannelNavbar />
             <ChannelBar />
           </Box>
-          <Box flexBasis="84vw">
+          <Box flexBasis="90vw">
             <Navbar />
-            <Content />
+            <Box display="flex">
+              <Box flexBasis="75vw">
+                <Content />
+              </Box>
+              <Box flexBasis="15rem">
+                <UserBar />
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>

@@ -10,7 +10,7 @@ const ContentNavbar = () => {
         display: 'flex',
         alignItems: 'center',
         borderColor: '#2d2f34',
-        height: '4.9vh',
+        height: '5vh',
         backgroundColor: '#313338',
         borderBottom: '0.1px solid',
       }}

@@ -16,6 +16,10 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
         marginBottom: '4px',
         marginTop: '4px',
         borderRadius: '4px',
+
+        '&:hover': {
+          backgroundColor: '#3f4249',
+        },
       }}
       onClick={() => handleClick(id)}
     >
