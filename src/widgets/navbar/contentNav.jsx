@@ -1,10 +1,9 @@
 import React from 'react';
-import { Box, Typography, Avatar } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const ContentNavbar = () => {
   const serverName = 'My Server';
-  const serverIcon = 'https://example.com/server-icon.png';
-
+  
   return (
     <Box
       sx={{
@@ -16,11 +15,6 @@ const ContentNavbar = () => {
         borderBottom: '0.1px solid',
       }}
     >
-      <Avatar
-        src={serverIcon}
-        alt={serverName}
-        sx={{ width: '32px', height: '32px', mr: 2 }}
-      />
       <Typography variant="h6">{serverName}</Typography>
     </Box>
   );

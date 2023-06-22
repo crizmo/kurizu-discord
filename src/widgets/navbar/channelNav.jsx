@@ -1,27 +1,37 @@
 import React from 'react';
-import { Box, Typography, Avatar } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const ChannelNavbar = () => {
-  const serverName = 'My Server';
-  const serverIcon = 'https://example.com/server-icon.png';
+  const serverName = 'Kurizu';
+  const bannerImageUrl = 'https://wallpapercave.com/wp/wp3745669.png';
 
   return (
     <Box
       sx={{
-        display: 'flex',
-        alignItems: 'center',
-        borderColor: '#2d2f34',
-        height: '4.9vh',
-        backgroundColor: '#313338',
-        borderBottom: '0.1px solid',
+        position: 'relative',
+        height: '15vh',
       }}
     >
-      <Avatar
-        src={serverIcon}
-        alt={serverName}
-        sx={{ width: '32px', height: '32px', mr: 2 }}
+      <img
+        src={bannerImageUrl}
+        alt="Server Banner"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
       />
-      <Typography variant="h6">{serverName}</Typography>
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '10%',
+          left: '10%',
+        }}
+      >
+        <Typography sx={{ color: '#eff0f2', fontSize: '1rem', fontWeight: 'bold' }}>
+          {serverName}
+        </Typography>
+      </Box>
     </Box>
   );
 };
