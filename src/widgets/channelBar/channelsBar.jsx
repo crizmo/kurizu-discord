@@ -28,7 +28,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
           marginRight: '8px',
         }}
       />
-      <Typography sx={{ color: isActive ? 'white' : '#787e85', 
+      <Typography sx={{ color: isActive ? 'white' : '#878e95', 
       fontWeight: 'semibold', display: 'flex', alignItems: 'center', fontSize: '1rem' }}>
         <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
         {name.toLowerCase()}

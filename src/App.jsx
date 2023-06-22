@@ -8,6 +8,9 @@ import Navbar from "./widgets/navbar/navbar";
 
 import ChannelBar from "./widgets/channelBar/channelsBar";
 import ContentWidget from "./widgets/content/contentWidget";
+
+import Content from "./components/Routes/content.jsx";
+
 function App() {
   return (
     <Box width="100vw" display="flex">
@@ -22,7 +25,7 @@ function App() {
           </Box>
           <Box flexBasis="84vw">
             <Navbar />
-            <ContentWidget />
+            <Content />
           </Box>
         </Box>
       </Box>
