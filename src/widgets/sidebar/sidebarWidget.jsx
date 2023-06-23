@@ -39,9 +39,9 @@ const Server = ({ isActive, serverName, serverIcon }) => {
         onMouseLeave={() => setHoveredServer(false)}
       >
         {isActive ? (
-          <img src={serverIcon} alt={serverName} width="100%" height="100%" />
+          <img src={serverIcon} alt={serverName} width="45vw" height="auto" />
         ) : (
-          <img src={serverIcon} alt={serverName} width="100%" height="100%" />
+          <img src={serverIcon} alt={serverName} width="45vw" height="auto" />
         )}
       </Box>
       {hoveredServer && (
@@ -124,7 +124,7 @@ const SidebarWidget = () => {
           cursor: 'pointer',
           margin: "0px 13px 13px 13px",
         }}>
-          <img src="https://cdn.discordapp.com/attachments/977949070893125632/1121303247714537552/discordlogo.png" alt="My Server" width="100%" height="100%" style={{
+          <img src="https://cdn.discordapp.com/attachments/977949070893125632/1121303247714537552/discordlogo.png" alt="My Server" width="45vw" height="auto" style={{
             borderRadius: '100px',
             marginTop: "10px"
           }} />

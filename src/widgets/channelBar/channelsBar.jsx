@@ -72,7 +72,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
   );
 };
 
-const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannelId }) => {
+const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannelId, setNavTitle }) => {
   const [isOpen, setIsOpen] = useState(true);
   const navigate = useNavigate();
 
@@ -82,6 +82,7 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
 
   const handleClick = (channelId, navigateTo) => {
     setActiveChannelId(channelId);
+    setNavTitle(navigateTo);
     navigate(navigateTo);
   };
 
@@ -125,7 +126,7 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
   );
 };
 
-const ChannelBar = () => {
+const ChannelBar = ({setNavTitle}) => {
   const [activeChannelId, setActiveChannelId] = useState(1);
 
   const channels = [
@@ -170,6 +171,8 @@ const ChannelBar = () => {
           channels={category.channels}
           activeChannelId={activeChannelId}
           setActiveChannelId={setActiveChannelId}
+
+          setNavTitle={setNavTitle}
         />
         </Box>
       ))}

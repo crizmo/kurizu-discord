@@ -13,7 +13,12 @@ import UserBar from "./widgets/userbar/userbar";
 
 import "./App.css";
 
+import { useState } from "react";
+
 function App() {
+
+  const [navTitle, setNavTitle] = useState("Home");
+
   return (
     <Router>
       <Box width="100vw" display="flex" className="App">
@@ -24,10 +29,10 @@ function App() {
           <Box display="flex">
             <Box flexBasis="15rem">
               <ChannelNavbar />
-              <ChannelBar />
+              <ChannelBar setNavTitle={setNavTitle} />
             </Box>
             <Box flexBasis="90vw">
-              <Navbar />
+              <Navbar navTitle={navTitle} />
               <Box display="flex">
                 <Box flexBasis="75vw">
                   <Content />

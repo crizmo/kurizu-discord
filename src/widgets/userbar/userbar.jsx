@@ -19,6 +19,7 @@ const User = ({ username, avatar, roles, about }) => {
             <Box>
                 <Typography sx={{
                     fontSize: '0.9rem',
+                    fontWeight: 'bold',
                     fontFamily: "GG Sans, sans-serif",
                     color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#40c4fb' : '#878e95',
                 }}
