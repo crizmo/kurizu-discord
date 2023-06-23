@@ -61,6 +61,13 @@ const UserBar = () => {
             roles: ['User'],
             about: 'Code'
         },
+        {
+            id: 5,
+            username: 'chikn_man',
+            avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg',
+            roles: ['Poop Eater'],
+            about: 'Poop'
+        },
     ];
 
     const categorizedUsers = {};
