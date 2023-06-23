@@ -19,7 +19,7 @@ const User = ({ username, avatar, roles, about }) => {
             <Box>
                 <Typography sx={{
                     fontSize: '0.9rem',
-                    fontWeight: 'bold',
+                    fontWeight: 'semibold',
                     fontFamily: "GG Sans, sans-serif",
                     color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#40c4fb' : '#878e95',
                 }}
@@ -69,6 +69,13 @@ const UserBar = () => {
             avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg',
             roles: ['Poop Eater'],
             about: 'Poop'
+        },
+        {
+            id: 6,
+            username: 'Liam',
+            avatar: 'https://cdn.discordapp.com/attachments/437067256049172491/1121773162967867553/5.png',
+            roles: ['User'],
+            about: 'Developer'
         },
     ];
 

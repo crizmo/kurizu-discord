@@ -95,7 +95,7 @@ const SidebarWidget = () => {
     {
       id: 4, isActive: false,
       serverName: 'Instagram',
-      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/999254421416452176/instagram.png',
+      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/1121772789263765585/instagram.png',
       navigate: 'https://www.instagram.com/criz_595/'
     },
     {

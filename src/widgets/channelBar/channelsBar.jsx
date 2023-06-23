@@ -51,7 +51,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
       {unreadCount > 0 && (
         <Box
           sx={{
-            marginLeft: '40px',
+            marginLeft: 'auto',
             backgroundColor: 'red',
             borderRadius: '50%',
             height: '16px',
