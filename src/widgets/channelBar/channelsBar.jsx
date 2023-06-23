@@ -42,6 +42,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
           display: 'flex',
           alignItems: 'center',
           fontSize: '1rem',
+          fontFamily: "GG Sans, sans-serif",
         }}
       >
         <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
@@ -61,6 +62,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
             color: 'white',
             fontSize: '0.8rem',
             fontWeight: 'semibold',
+            fontFamily: "GG Sans, sans-serif"
           }}
         >
           {unreadCount}
@@ -93,6 +95,7 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
           cursor: 'pointer',
           fontSize: '0.8rem',
           fontWeight: 'bold',
+          fontFamily: "GG Sans, sans-serif"
         }}
         onClick={toggleDropdown}
       >
@@ -158,7 +161,7 @@ const ChannelBar = () => {
   ];
 
   return (
-    <Box width="100%" height="85vh" backgroundColor="#2b2d31">
+    <Box width="100%" height="85vh" backgroundColor="#2b2d31" overflow="auto">
       {channels.map((category) => (
         <Box key={category.category} sx={{ cursor: 'pointer' }}>
         <ChannelCategory

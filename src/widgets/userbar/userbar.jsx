@@ -19,11 +19,12 @@ const User = ({ username, avatar, roles, about }) => {
             <Box>
                 <Typography sx={{
                     fontSize: '0.9rem',
+                    fontFamily: "GG Sans, sans-serif",
                     color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#40c4fb' : '#878e95',
                 }}
 
                 >{username}</Typography>
-                <Typography sx={{ color: 'grey.500', fontSize: '0.8rem' }}>
+                <Typography sx={{ color: 'grey.500', fontSize: '0.8rem', fontFamily: "GG Sans, sans-serif" }}>
                     {about}
                 </Typography>
             </Box>
@@ -82,7 +83,7 @@ const UserBar = () => {
     });
 
     return (
-        <Box width="100%" height="95vh" bgcolor="#2b2d31" color="white">
+        <Box width="100%" height="95vh" bgcolor="#2b2d31" color="white" overflow="auto">
             {Object.entries(categorizedUsers).map(([role, users]) => (
                 <React.Fragment key={role}>
                     <Typography

@@ -17,6 +17,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           wordWrap: 'break-word',
           maxWidth: '50vw',
           whiteSpace: 'pre-line',
+          fontFamily: "GG Sans, sans-serif"
         }}
       >
         {parts.map((part, index) => {
@@ -42,23 +43,26 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           } else if (part.match(iframeRegex)) {
             // Render the iframe tag
             return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
-          } 
+          }
           else if (part.match(ping)) {
             return (
               <Box
                 key={index}
                 sx={{
-                  backgroundColor: '#454e6f',
+                  backgroundColor: '#5865f24d',
                   padding: '2px',
                   borderRadius: '4px',
                   display: 'inline-block',
+                  color: '#c9cdfb',
                 }}
               >
                 {part}
               </Box>
             );
           } else {
-            return <React.Fragment key={index}>{part}<br /></React.Fragment>;
+            return <React.Fragment key={index}>
+                {part}<br />
+            </React.Fragment>;
           }
         })}
       </Typography>

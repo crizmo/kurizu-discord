@@ -1,12 +1,6 @@
-:root {
-  --font-family: 'GG Sans', sans-serif; 
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
-
-  font-family: var(--font-family);
 }
 
