@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 
 // info
 import Home from "../../pages/info/home";
+import Anouncements from "../../pages/info/announcements";
 import About from "../../pages/info/about";
 
 // general
@@ -24,6 +25,7 @@ const Content = () => {
         <Routes>
             {/* info */}
             <Route path="/" element={<Home />} />
+            <Route path="/announcements" element={<Anouncements />} />
             <Route path="/about" element={<About />} />
 
             {/* general */}
