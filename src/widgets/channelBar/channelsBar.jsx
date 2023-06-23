@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { KeyboardArrowDown, KeyboardArrowRight, Tag } from '@mui/icons-material';
 
+import { useNavigate } from "react-router-dom";
+
 const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
   return (
     <Box
@@ -16,12 +18,13 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
         marginBottom: '4px',
         marginTop: '4px',
         borderRadius: '4px',
-
         '&:hover': {
           backgroundColor: '#3f4249',
         },
       }}
-      onClick={() => handleClick(id)}
+      onClick={() => {
+        handleClick(id);
+      }}
     >
       <Box
         sx={{
@@ -32,8 +35,15 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
           marginRight: '8px',
         }}
       />
-      <Typography sx={{ color: isActive ? 'white' : '#878e95', 
-      fontWeight: 'semibold', display: 'flex', alignItems: 'center', fontSize: '1rem' }}>
+      <Typography
+        sx={{
+          color: isActive ? 'white' : '#878e95',
+          fontWeight: 'semibold',
+          display: 'flex',
+          alignItems: 'center',
+          fontSize: '1rem',
+        }}
+      >
         <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
         {name.toLowerCase()}
       </Typography>
@@ -50,7 +60,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
             alignItems: 'center',
             color: 'white',
             fontSize: '0.8rem',
-            fontWeight: 'semibold'
+            fontWeight: 'semibold',
           }}
         >
           {unreadCount}
@@ -62,13 +72,15 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
 
 const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannelId }) => {
   const [isOpen, setIsOpen] = useState(true);
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleClick = (channelId) => {
+  const handleClick = (channelId, navigateTo) => {
     setActiveChannelId(channelId);
+    navigate(navigateTo);
   };
 
   return (
@@ -101,7 +113,7 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
               name={channel.name}
               unreadCount={channel.unreadCount}
               isActive={activeChannelId === channel.id}
-              handleClick={handleClick}
+              handleClick={() => handleClick(channel.id, channel.navigateTo)}
             />
           ))}
         </Box>
@@ -148,6 +160,7 @@ const ChannelBar = () => {
   return (
     <Box width="100%" height="85vh" backgroundColor="#2b2d31">
       {channels.map((category) => (
+        <Box key={category.category} sx={{ cursor: 'pointer' }}>
         <ChannelCategory
           key={category.category}
           category={category.category}
@@ -155,6 +168,7 @@ const ChannelBar = () => {
           activeChannelId={activeChannelId}
           setActiveChannelId={setActiveChannelId}
         />
+        </Box>
       ))}
     </Box>
   );

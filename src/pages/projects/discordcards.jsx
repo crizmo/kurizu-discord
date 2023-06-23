@@ -1,0 +1,57 @@
+import React from 'react';
+import { Box } from '@mui/material';
+
+import CompleteMessage from '../../components/completeMessage';
+
+const DiscordCards = () => {
+    const messages = [
+        {
+            username: "Kurizu",
+            time: "12:00",
+            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            role: "Owner",
+            message: "Discord Cards helps you display your discord activity as an epic card that you can use anywhere you want." +
+                "<br><br>" +
+                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/988140784807202886/992759894627340298/breeze-stats.png' alt='homepgimg' height='300px' width='auto' style='border-radius: 10px;'>" +
+                "<br>" +
+                "<img class='msg-img' src='https://discord-cards.kurizu.repl.co/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg' alt='api'/>" +
+                "<br>" +
+                "Discord Cards also offers an API for you to use, so you can incorporate the cards in your GitHub repo or anywhere you want." +
+                "<br><br>" +
+                "GitHub: <a href='https://github.com/crizmo/DiscordCards' alt='Discord Cards github' target='_blank'>Discord Cards</a><br>" +
+                "Website: <a href='https://discord-cards.vercel.app/' alt='Discord Cards website' target='_blank'>Discord Cards</a><br>" +
+                "API: <a href='https://discord-cards.kurizu.repl.co/' alt='Discord Cards api' target='_blank'>Discord Cards API</a><br><br>" +
+                "Thanks for reading!"
+        },
+        {
+            username: "Kurizu",
+            time: "12:00",
+            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            role: "Owner",
+            message: "Discord Cards was made in roughly 2 weeks [would have taken less time if I didn't have college, lol]." +
+                "<br>" +
+                "The backend of Discord Cards is made using Node.js and Express, while the frontend is made using React." +
+                "<br>" +
+                "I used Socket.io for the real-time updates on the website." +
+                "<br><br>" +
+                "I would appreciate any feedback on the website or the API." +
+                "<br>" +
+                "Also, feel free to contribute to the project if you have any better code or ideas in mind!" +
+                "<br><br>" +
+                "GitHub: <a href='https://github.com/crizmo/DiscordCards' alt='Discord Cards github' target='_blank'>Discord Cards</a><br>" +
+                "Website: <a href='https://discord-cards.vercel.app/' alt='Discord Cards website' target='_blank'>Discord Cards</a><br>" +
+                "API: <a href='https://discord-cards.kurizu.repl.co/' alt='Discord Cards api' target='_blank'>Discord Cards API</a><br><br>" +
+                "Thanks for reading!"
+        }
+    ];
+    
+    
+
+    return (
+        <Box width="100%" height="95vh" backgroundColor="#313338" overflow="auto">
+            <CompleteMessage messages={messages} />
+        </Box>
+    );
+};
+
+export default DiscordCards;
