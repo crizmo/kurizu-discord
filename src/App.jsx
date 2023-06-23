@@ -8,6 +8,7 @@ import Navbar from "./widgets/navbar/navbar";
 import ChannelBar from "./widgets/channelBar/channelsBar";
 
 import Content from "./components/Routes/content.jsx";
+import MessageBar from "./widgets/messagebar/messagebar";
 
 import UserBar from "./widgets/userbar/userbar";
 
@@ -36,6 +37,7 @@ function App() {
               <Box display="flex">
                 <Box flexBasis="75vw">
                   <Content />
+                  <MessageBar />
                 </Box>
                 <Box flexBasis="15rem">
                   <UserBar />

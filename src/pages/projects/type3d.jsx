@@ -40,7 +40,7 @@ const Type3d = () => {
     
 
     return (
-        <Box width="100%" height="95vh" backgroundColor="#313338" overflow="auto">
+        <Box width="100%" height="90vh" backgroundColor="#313338" overflow="auto">
             <CompleteMessage messages={messages} />
         </Box>
     );

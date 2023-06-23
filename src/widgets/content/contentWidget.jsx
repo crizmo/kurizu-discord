@@ -10,7 +10,7 @@ const ContentWidget = () => {
   ];
 
   return (
-    <Box width="100%" height="95vh" backgroundColor="#313338">
+    <Box width="100%" height="90vh" backgroundColor="#313338">
       <Typography variant="h5" sx={{ mb: 2 }}>
         Content
       </Typography>
