@@ -5,7 +5,12 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 const Channel = ({ id, name, unreadCount, handleClick }) => {
   const location = useLocation();
-  const isActivePage = location.pathname === "/"+name.toLowerCase();
+  let isActivePage = location.pathname === "/"+name.toLowerCase();
+  if(location.pathname === "/" || location.pathname === ""){
+    isActivePage = name.toLowerCase() === "home";
+  } else if (location.pathname === "/discordcards"){
+    isActivePage = name.toLowerCase() === "discord cards";
+  }
   return (
     <Box
       sx={{
@@ -87,7 +92,7 @@ const ChannelCategory = ({ category, channels, setNavTitle }) => {
   };
 
   return (
-    <Box sx={{ paddingTop: '10px' }}>
+    <Box sx={{ paddingTop: '10px', userSelect: 'none', WebkitTapHighlightColor: 'transparent' }}>
       <Typography
         sx={{
           color: '#777c84',
@@ -161,7 +166,7 @@ const ChannelBar = ({ setNavTitle }) => {
   return (
     <Box width="100%" height="85vh" backgroundColor="#2b2d31" overflow="auto">
       {channels.map((category) => (
-        <Box key={category.category} sx={{ cursor: 'pointer' }}>
+        <Box key={category.category} sx={{ cursor: 'pointer', userSelect: 'none', WebkitTapHighlightColor: 'transparent' }} > 
           <ChannelCategory
             key={category.category}
             category={category.category}
