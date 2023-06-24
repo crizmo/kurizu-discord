@@ -25,7 +25,7 @@ const About = () => {
       role: "Owner",
       message: "If you want to see some of my other projects, check out my GitHub page: <a href='https://github.com/crizmo/'>Github</a>" +
                 "\n\n I also have a discord server , if you want to join :" +
-                "\n\n <iframe src='https://discord.com/widget?id=782646778347388959&theme=dark' width='400' height='200' allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'></iframe>" +
+                "\n\n <iframe src='https://discord.com/widget?id=782646778347388959&theme=dark' width='100%' height='200' allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'></iframe>" +
                 "\n Thats about it , thanks for reading !",
     },
     {
