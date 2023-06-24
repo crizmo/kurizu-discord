@@ -28,15 +28,6 @@ const General = () => {
       message: "Nope I have no idea what to write here",
     },
     {
-      username: "Pocky",
-      time: "12:00",
-      avatar: "https://cdn.discordapp.com/avatars/806015103198822401/a7224a4e4806e4fa9d694e2c5ca31e70.webp",
-      role: "Admin",
-      message: "Oh btw if you want to be on the right side user list or want a message on the website" +
-        "\n You can join the discord server and tell me to do so !" +
-        "\n Discord Server : <a href='https://discord.gg/drunkbetch-782646778347388959'>discord.gg/drunkbetch</a>",
-    },
-    {
       username: "Kat21",
       time: "12:00",
       avatar: "https://cdn.discordapp.com/attachments/1122159848663027822/1122160050740412467/BigCat01.png",

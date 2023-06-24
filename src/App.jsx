@@ -28,8 +28,7 @@ function App() {
   const [touchStart, setTouchStart] = useState(null)
   const [touchEnd, setTouchEnd] = useState(null)
 
-  const [closeLeft, setCloseLeft] = useState(false)
-  const [closeRight, setCloseRight] = useState(false)
+  const [message, setMessage] = useState("");
 
   const [state, setState] = useState({
     isPaneOpen: false,
@@ -81,30 +80,18 @@ function App() {
                 <ChannelNavbar />
                 <ChannelBar setNavTitle={setNavTitle} />
               </Box>
-              {!isMobile ? (
                 <Box flexBasis="90vw" overflow="auto" bgcolor="#2f3136">
                   <Navbar navTitle={navTitle} />
                   <Box display="flex">
                     <Box flexBasis="75vw">
-                      <Content />
-                      <MessageBar />
+                      <Content message={message} />
+                      <MessageBar setMessage={setMessage} />
                     </Box>
                     <Box flexBasis="15rem">
                       <UserBar />
                     </Box>
                   </Box>
                 </Box>
-              ) : (
-                <Box flexBasis="90vw" bgcolor="#2f3136" overflow={isMobile ? "hidden" : "auto"}>
-                  <Navbar navTitle={navTitle} />
-                  <Box display="flex">
-                    <Box flexBasis="1vw">
-                      <Content />
-                      <MessageBar />
-                    </Box>
-                  </Box>
-                </Box>
-              )}
             </Box>
           </Box>
         </Box>
@@ -114,8 +101,8 @@ function App() {
             <Navbar navTitle={navTitle} />
             <Box display="flex">
               <Box flexBasis="100vw">
-                <Content />
-                <MessageBar />
+                <Content message={message} />
+                <MessageBar setMessage={setMessage} />
               </Box>
             </Box>
           </Box>

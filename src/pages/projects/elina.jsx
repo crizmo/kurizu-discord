@@ -41,9 +41,9 @@ const Elina = () => {
                 "<br>" +
                 "You can find the source code from the links below:" +
                 "<br>" +
-                "<a href='https://github.com/crizmo/Elina-dev' target='_blank'>Github</a>" +
+                "<a href='https://github.com/crizmo/Elina-dev'>Github</a>" +
                 "<br>" +
-                "<a href='https://elina-bot.netlify.app/' target='_blank'>Website</a>" +
+                "<a href='https://elina-bot.netlify.app/'>Website</a>" +
                 "<br>" +
                 "<a href='https://github.com/crizmo/Elina-dev'>" +
                 "<img alt='GitHub Repo stars' src='https://img.shields.io/github/stars/crizmo/elina-dev?style=social'>" +

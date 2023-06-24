@@ -30,6 +30,15 @@ const Announcements = () => {
       role: "Admin",
       message: "It looks great :D",
     },
+    {
+      username: "Pocky",
+      time: "12:00",
+      avatar: "https://cdn.discordapp.com/avatars/806015103198822401/a7224a4e4806e4fa9d694e2c5ca31e70.webp",
+      role: "Admin",
+      message: "Oh btw if you want to be on the right side user list or want a message on the website" +
+        "\n You can join the discord server and tell me to do so !" +
+        "\n Discord Server : <a href='https://discord.gg/drunkbetch-782646778347388959'>discord.gg/drunkbetch</a>",
+    },
   ];
 
   return (
