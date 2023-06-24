@@ -40,7 +40,7 @@ const UserBar = () => {
             username: 'Kurizu',
             avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png',
             roles: ['Owner'],
-            about: 'Poop'
+            about: 'I like to code :D'
         },
         {
             id: 2,
