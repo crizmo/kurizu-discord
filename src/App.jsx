@@ -28,7 +28,7 @@ function App() {
   const [touchStart, setTouchStart] = useState(null)
   const [touchEnd, setTouchEnd] = useState(null)
 
-  const [message, setMessage] = useState("");
+  const [data, setData] = useState({ name: '', pfp: '', time: '', message: '' });
 
   const [state, setState] = useState({
     isPaneOpen: false,
@@ -84,8 +84,8 @@ function App() {
                   <Navbar navTitle={navTitle} />
                   <Box display="flex">
                     <Box flexBasis="75vw">
-                      <Content message={message} />
-                      <MessageBar setMessage={setMessage} />
+                      <Content data={data} />
+                      <MessageBar data={data} setData={setData} />
                     </Box>
                     <Box flexBasis="15rem">
                       <UserBar />
@@ -101,8 +101,8 @@ function App() {
             <Navbar navTitle={navTitle} />
             <Box display="flex">
               <Box flexBasis="100vw">
-                <Content message={message} />
-                <MessageBar setMessage={setMessage} />
+                <Content data={data} />
+                <MessageBar data={data} setData={setData} />
               </Box>
             </Box>
           </Box>

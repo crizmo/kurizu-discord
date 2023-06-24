@@ -4,8 +4,8 @@ import { AddBox, CardGiftcard, Gif, Mood, EmojiEmotions } from '@mui/icons-mater
 import { supabase } from '../../data/supabase';
 import { useLocation } from 'react-router-dom';
 
-const MessageBar = () => {
-    const [data, setData] = useState({ name: '', pfp: '', time: '', message: '' });
+const MessageBar = ({data, setData}) => {
+    // const [data, setData] = useState({ name: '', pfp: '', time: '', message: '' });
     const location = useLocation();
     const sendMessage = async () => {
         try {
@@ -47,7 +47,7 @@ const MessageBar = () => {
                 padding: '0px 30px 0px 30px',
             }}
         >
-            {location.pathname === "/general" ? (
+            {location.pathname === "/generalsenbfiknseiknfisn" ? (
                 <Box
                     sx={{
                         position: 'relative',

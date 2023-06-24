@@ -20,7 +20,7 @@ import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
 
-const Content = () => {
+const Content = ({ data }) => {
     return (
         <Routes>
             {/* info */}
@@ -29,7 +29,7 @@ const Content = () => {
             <Route path="/about" element={<About />} />
 
             {/* general */}
-            <Route path="/general" element={<General />} />
+            <Route path="/general" element={<General data={data} />} />
 
             {/* projects */}
             <Route path="/anyanime" element={<AnyAnime />} />
