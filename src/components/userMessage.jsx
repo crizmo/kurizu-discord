@@ -110,7 +110,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           }}
         >
           {username}
-          <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>{time}</span>
+          <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>Today at {time}</span>
         </Typography>
         {renderMessageContent()}
         {image ? (
