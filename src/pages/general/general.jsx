@@ -36,6 +36,13 @@ const General = () => {
         "\n You can join the discord server and tell me to do so !" +
         "\n Discord Server : <a href='https://discord.gg/drunkbetch-782646778347388959'>discord.gg/drunkbetch</a>",
     },
+    {
+      username: "Kat21",
+      time: "12:00",
+      avatar: "https://cdn.discordapp.com/attachments/1122159848663027822/1122160050740412467/BigCat01.png",
+      role: "User",
+      message: "Hello",
+    },
   ];
 
   return (
