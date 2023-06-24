@@ -1,6 +1,11 @@
 import React from 'react';
 import { Box, Typography, Avatar } from '@mui/material';
 
+let isMobile = false;
+if (window.innerWidth < 600) {
+  isMobile = true;
+}
+
 const UserMessage = ({ username, time, avatar, role, message, image }) => {
   const renderMessageContent = () => {
     const linkRegex = /<a\s+href=(['"])(.*?)\1>(.*?)<\/a>/g; // Regular expression to match <a href="...">...</a>
@@ -15,7 +20,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           color: 'white',
           fontSize: '0.9rem',
           wordWrap: 'break-word',
-          maxWidth: '50vw',
+          maxWidth: isMobile ? '80vw' : '50vw',
           whiteSpace: 'pre-line',
           fontFamily: "GG Sans, sans-serif"
         }}
@@ -112,7 +117,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           <img
             src={image}
             alt="message"
-            style={{ maxWidth: '20vw', maxHeight: 'auto', marginTop: '8px', borderRadius: '8px' }}
+            style={{ maxWidth: '25vw', maxHeight: 'auto', marginTop: '8px', borderRadius: '8px' }}
           />
         ) : null}
       </Box>

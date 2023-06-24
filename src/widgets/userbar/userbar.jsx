@@ -89,9 +89,12 @@ const UserBar = () => {
             categorizedUsers[role].push(user);
         });
     });
+    
+    const isMobile = window.innerWidth <= 768;
 
     return (
-        <Box width="100%" height="95vh" bgcolor="#2b2d31" color="white" overflow="auto">
+        <Box width="100%" height={isMobile ? '100vh' : '95vh'}
+         bgcolor="#2b2d31" color="white" overflow="auto">
             {Object.entries(categorizedUsers).map(([role, users]) => (
                 <React.Fragment key={role}>
                     <Typography

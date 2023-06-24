@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 const ChannelNavbar = () => {
   const serverName = 'Kurizu';
-  const bannerImageUrl = 'https://wallpapercave.com/wp/wp3745669.png';
+  const bannerImageUrl = 'https://images6.alphacoders.com/130/thumbbig-1302043.webp';
 
   return (
     <Box

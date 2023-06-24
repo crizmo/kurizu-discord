@@ -16,7 +16,7 @@ const Timely = () => {
                 "\n\n" +
                 "I personally think knowing how much time is left will increase productivity. That's all!" +
                 "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1019262228953829496/1019262284461252648/timely.png'>" +
+                "<img src='https://cdn.discordapp.com/attachments/1019262228953829496/1019262284461252648/timely.png' alt='homepgimg' height='200px' width='auto' style='border-radius: 10px;'>" +
                 "\n\n" +
                 "Contributing" +
                 "\n\n" +

@@ -14,7 +14,7 @@ const Pixit = () => {
                 "<br><br>" +
                 "Check it out if you want: <a href='https://pixit.kurizu.repl.co/'>https://pixit.kurizu.repl.co/</a>" +
                 "<br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/970974497941368873/977193997267271690/unknown.png' alt='homepgimg' height='300px' width='auto' style='border-radius: 10px;'>"
+                "<img src='https://cdn.discordapp.com/attachments/970974497941368873/977193997267271690/unknown.png' alt='homepgimg' height='200px' width='auto' style='border-radius: 10px;'>"
         },
         {
             username: "Kurizu",

@@ -9,3 +9,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.sliding-pane-left {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.sliding-pane-right {
+  background-color: transparent;
+  overflow: hidden;
+}

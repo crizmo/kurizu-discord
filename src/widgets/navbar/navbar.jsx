@@ -19,6 +19,11 @@ const Navbar = ({ navTitle }) => {
     about = '📚 Some of my projects!';
   }
 
+  let isMobile = false;
+  if (window.innerWidth < 800) {
+    isMobile = true;
+  }
+
   return (
     <Box
       sx={{
@@ -63,7 +68,7 @@ const Navbar = ({ navTitle }) => {
         }} />
         <Typography
           sx={{
-            fontSize: '1rem',
+            fontSize: isMobile ? '0.8rem' : '1rem',
             fontFamily: 'GG Sans, sans-serif',
             color: '#7e858c',
           }}
@@ -71,33 +76,39 @@ const Navbar = ({ navTitle }) => {
           {about}
         </Typography>
       </Box>
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        {/* Add your icons here */}
-        <WifiCalling3 sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
-        <Videocam sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
-        <PushPin sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
-        <PersonAdd sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            backgroundColor: '#1e1f22',
-            borderRadius: '5px',
-            marginRight: '25px',
-            padding: '0px 4px',
-            width: '120px',
-          }}
-        >
-          <InputBase
-            sx={{ color: 'grey.100', fontSize: '0.8rem', fontFamily: 'GG Sans, sans-serif' }}
-            placeholder="Search"
-            inputProps={{ 'aria-label': 'search' }}
-          />
-          <Search sx={{ color: '#7e858c', margin: '0px 4px', fontSize: '1rem' }} />
+      {isMobile ? (
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <PushPin sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <PersonAdd sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
         </Box>
-        <Inbox sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
-        <HelpOutline sx={{ color: '#b4bac1', cursor: 'pointer' }} />
-      </Box>
+      ) : (
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <WifiCalling3 sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <Videocam sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <PushPin sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <PersonAdd sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              backgroundColor: '#1e1f22',
+              borderRadius: '5px',
+              marginRight: '25px',
+              padding: '0px 4px',
+              width: '120px',
+            }}
+          >
+            <InputBase
+              sx={{ color: 'grey.100', fontSize: '0.8rem', fontFamily: 'GG Sans, sans-serif' }}
+              placeholder="Search"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+            <Search sx={{ color: '#7e858c', margin: '0px 4px', fontSize: '1rem' }} />
+          </Box>
+          <Inbox sx={{ marginRight: '25px', color: '#b4bac1', cursor: 'pointer' }} />
+          <HelpOutline sx={{ color: '#b4bac1', cursor: 'pointer' }} />
+        </Box>
+      )}
     </Box>
   );
 };

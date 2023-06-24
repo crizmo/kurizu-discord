@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { KeyboardArrowDown, KeyboardArrowRight, Tag } from '@mui/icons-material';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-import { useNavigate } from "react-router-dom";
-
-const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
+const Channel = ({ id, name, unreadCount, handleClick }) => {
+  const location = useLocation();
+  const isActivePage = location.pathname === "/"+name.toLowerCase();
   return (
     <Box
       sx={{
@@ -12,7 +13,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
         alignItems: 'center',
         padding: '4px',
         cursor: 'pointer',
-        backgroundColor: isActive ? '#3f4249' : 'transparent',
+        backgroundColor: isActivePage ? '#3f4249' : 'transparent',
         marginRight: '8px',
         marginLeft: '8px',
         marginBottom: '4px',
@@ -37,12 +38,12 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
       />
       <Typography
         sx={{
-          color: isActive ? 'white' : '#878e95',
+          color: isActivePage ? 'white' : '#878e95',
           fontWeight: 'semibold',
           display: 'flex',
           alignItems: 'center',
           fontSize: '1rem',
-          fontFamily: "GG Sans, sans-serif",
+          fontFamily: 'GG Sans, sans-serif',
         }}
       >
         <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
@@ -62,7 +63,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
             color: 'white',
             fontSize: '0.8rem',
             fontWeight: 'semibold',
-            fontFamily: "GG Sans, sans-serif"
+            fontFamily: 'GG Sans, sans-serif',
           }}
         >
           {unreadCount}
@@ -72,7 +73,7 @@ const Channel = ({ id, name, unreadCount, isActive, handleClick }) => {
   );
 };
 
-const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannelId, setNavTitle }) => {
+const ChannelCategory = ({ category, channels, setNavTitle }) => {
   const [isOpen, setIsOpen] = useState(true);
   const navigate = useNavigate();
 
@@ -81,7 +82,6 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
   };
 
   const handleClick = (channelId, navigateTo) => {
-    setActiveChannelId(channelId);
     setNavTitle(navigateTo);
     navigate(navigateTo);
   };
@@ -96,7 +96,7 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
           cursor: 'pointer',
           fontSize: '0.8rem',
           fontWeight: 'bold',
-          fontFamily: "GG Sans, sans-serif"
+          fontFamily: 'GG Sans, sans-serif',
         }}
         onClick={toggleDropdown}
       >
@@ -116,7 +116,6 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
               id={channel.id}
               name={channel.name}
               unreadCount={channel.unreadCount}
-              isActive={activeChannelId === channel.id}
               handleClick={() => handleClick(channel.id, channel.navigateTo)}
             />
           ))}
@@ -126,23 +125,21 @@ const ChannelCategory = ({ category, channels, activeChannelId, setActiveChannel
   );
 };
 
-const ChannelBar = ({setNavTitle}) => {
+const ChannelBar = ({ setNavTitle }) => {
   const [activeChannelId, setActiveChannelId] = useState(1);
 
   const channels = [
     {
       category: '🔮 Info',
       channels: [
-        { id: 1, name: 'Home', unreadCount: 0, isActive: true, navigateTo: '/' },
+        { id: 1, name: 'Home', unreadCount: 0, isActive: false, navigateTo: '/' },
         { id: 2, name: 'Announcements', unreadCount: 1, isActive: false, navigateTo: '/announcements' },
         { id: 3, name: 'About', unreadCount: 0, isActive: false, navigateTo: '/about' },
       ],
     },
     {
       category: '⭐ General',
-      channels: [
-        { id: 4, name: 'General', unreadCount: 0, isActive: false, navigateTo: '/general' },
-      ],
+      channels: [{ id: 4, name: 'General', unreadCount: 0, isActive: false, navigateTo: '/general' }],
     },
     {
       category: '📂 Projects',
@@ -165,15 +162,14 @@ const ChannelBar = ({setNavTitle}) => {
     <Box width="100%" height="85vh" backgroundColor="#2b2d31" overflow="auto">
       {channels.map((category) => (
         <Box key={category.category} sx={{ cursor: 'pointer' }}>
-        <ChannelCategory
-          key={category.category}
-          category={category.category}
-          channels={category.channels}
-          activeChannelId={activeChannelId}
-          setActiveChannelId={setActiveChannelId}
-
-          setNavTitle={setNavTitle}
-        />
+          <ChannelCategory
+            key={category.category}
+            category={category.category}
+            channels={category.channels}
+            activeChannelId={activeChannelId}
+            setActiveChannelId={setActiveChannelId}
+            setNavTitle={setNavTitle}
+          />
         </Box>
       ))}
     </Box>
