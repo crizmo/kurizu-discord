@@ -65,20 +65,27 @@ const UserBar = () => {
         },
         {
             id: 5,
+            username: 'Raphael',
+            avatar: 'https://cdn.discordapp.com/attachments/910210865683386408/1122144424307216444/raph.png',
+            roles: ['White'],
+            about: 'Coding >_< is cool !'
+        },
+        {
+            id: 6,
             username: 'chikn_man',
             avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg',
             roles: ['Poop Eater'],
             about: 'Poop'
         },
         {
-            id: 6,
+            id: 7,
             username: 'Liam',
             avatar: 'https://cdn.discordapp.com/attachments/437067256049172491/1121773162967867553/5.png',
             roles: ['User'],
             about: 'Developer'
         },
         {
-            id: 7,
+            id: 8,
             username: 'ErikoXDev',
             avatar: 'https://cdn.discordapp.com/attachments/1122075854923632690/1122076009185947648/eriko4klogoFull.png',
             roles: ['User'],
