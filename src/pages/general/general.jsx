@@ -10,21 +10,28 @@ const General = () => {
       time: "12:00",
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
-      message: "Hello World! ",
-      image: "https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg",
+      message: "Yello ppl !",
+      image: "https://media.tenor.com/Jsj-LPg73J0AAAAM/cute-animals.gif",
     },
     {
       username: "Chikn_man",
       time: "1:00",
       avatar: "https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg",
       role: "Poop Eater",
-      message: "I eat poop",
+      message: "You don't know what to write here do you ?",
     },
     {
       username: "Kurizu",
       time: "12:00",
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
+      message: "Nope I have no idea what to write here",
+    },
+    {
+      username: "Pocky",
+      time: "12:00",
+      avatar: "https://cdn.discordapp.com/avatars/806015103198822401/a7224a4e4806e4fa9d694e2c5ca31e70.webp",
+      role: "Admin",
       message: "Oh btw if you want to be on the right side user list or want a message on the website" +
         "\n You can join the discord server and tell me to do so !" +
         "\n Discord Server : <a href='https://discord.gg/drunkbetch-782646778347388959'>discord.gg/drunkbetch</a>",

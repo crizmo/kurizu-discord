@@ -28,7 +28,7 @@ const Announcements = () => {
       time: "1:00",
       avatar: "https://cdn.discordapp.com/avatars/782653471354650684/ace466bef93d7804a041e1ca6a5ac942.webp",
       role: "Admin",
-      message: "It looks great [ ik i wrote it 😔 ]",
+      message: "It looks great :D",
     },
   ];
 
