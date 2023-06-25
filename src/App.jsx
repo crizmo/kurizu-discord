@@ -117,22 +117,42 @@ function App() {
     // <Router>
     <div>
       <BrowserRouter>
-      {!isMobile ? (
-        <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
-          <Box flexBasis="4.5rem" className="sidebar">
-            <SidebarWidget />
-          </Box>
-          <Box flexBasis="99vw">
-            <Box display="flex" >
-              <Box flexBasis={!isMobile ? "15rem" : null} >
-                <ChannelNavbar />
-                <ChannelBar setNavTitle={setNavTitle} />
-              </Box>
+        {!isMobile ? (
+          <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+            <Box flexBasis="4.5rem" className="sidebar">
+              <SidebarWidget />
+            </Box>
+            <Box flexBasis="99vw">
+              <Box display="flex" >
+                <Box flexBasis={!isMobile ? "15rem" : null} >
+                  <ChannelNavbar />
+                  <ChannelBar setNavTitle={setNavTitle} />
+                </Box>
                 <Box flexBasis="90vw" overflow="auto" bgcolor="#2f3136">
                   <Navbar navTitle={navTitle} />
                   <Box display="flex">
                     <Box flexBasis="75vw">
-                      <Content />
+                      <Routes>
+                        {/* info */}
+                        <Route path="/" element={<Home />} />
+                        <Route path="/announcements" element={<Announcements />} />
+                        <Route path="/about" element={<About />} />
+
+                        {/* general */}
+                        <Route path="/general" element={<General />} />
+
+                        {/* projects */}
+                        <Route path="/anyanime" element={<AnyAnime />} />
+                        <Route path="/image2url" element={<Image2Url />} />
+                        <Route path="/discordcards" element={<DiscordCards />} />
+                        <Route path="/elina" element={<Elina />} />
+                        <Route path="/cordle" element={<Cordle />} />
+                        <Route path="/timely" element={<Timely />} />
+                        <Route path="/emogit" element={<Emogit />} />
+                        <Route path="/minikey" element={<Minikey />} />
+                        <Route path="/type3d" element={<Type3d />} />
+                        <Route path="/pixit" element={<Pixit />} />
+                      </Routes>
                       <MessageBar />
                     </Box>
                     <Box flexBasis="15rem">
@@ -140,77 +160,97 @@ function App() {
                     </Box>
                   </Box>
                 </Box>
-            </Box>
-          </Box>
-        </Box>
-      ) : (
-        <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
-          <Box flexBasis="100vw" bgcolor="#2f3136" overflow={isMobile ? "hidden" : "auto"}>
-            <Navbar navTitle={navTitle} />
-            <Box display="flex">
-              <Box flexBasis="100vw">
-                <Content />
-                <MessageBar />
               </Box>
             </Box>
           </Box>
-          <SlidingPane
-            isOpen={state.isPaneOpenLeft}
-            from="left"
-            width="80vw"
-            onRequestClose={() => setState({ isPaneOpenLeft: false })}
-            className="sliding-pane-left"
-            hideHeader={true}
-          >
+        ) : (
+          <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             <Box flexBasis="100vw" bgcolor="#2f3136" overflow={isMobile ? "hidden" : "auto"}>
-              <Box display="flex" flexDirection="column" height="100vh" sx={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}>
-                <Box display="flex" >
-                  <Box flexBasis="5rem">
-                    <SidebarWidget />
-                  </Box>
-                  <Box flexBasis="95.5vw">
-                    <Box flexBasis={null} >
-                      <ChannelNavbar />
-                      <ChannelBar setNavTitle={setNavTitle} />
+              <Navbar navTitle={navTitle} />
+              <Box display="flex">
+                <Box flexBasis="100vw">
+                  <Routes>
+                    {/* info */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/announcements" element={<Announcements />} />
+                    <Route path="/about" element={<About />} />
+
+                    {/* general */}
+                    <Route path="/general" element={<General />} />
+
+                    {/* projects */}
+                    <Route path="/anyanime" element={<AnyAnime />} />
+                    <Route path="/image2url" element={<Image2Url />} />
+                    <Route path="/discordcards" element={<DiscordCards />} />
+                    <Route path="/elina" element={<Elina />} />
+                    <Route path="/cordle" element={<Cordle />} />
+                    <Route path="/timely" element={<Timely />} />
+                    <Route path="/emogit" element={<Emogit />} />
+                    <Route path="/minikey" element={<Minikey />} />
+                    <Route path="/type3d" element={<Type3d />} />
+                    <Route path="/pixit" element={<Pixit />} />
+                  </Routes>
+                  <MessageBar />
+                </Box>
+              </Box>
+            </Box>
+            <SlidingPane
+              isOpen={state.isPaneOpenLeft}
+              from="left"
+              width="80vw"
+              onRequestClose={() => setState({ isPaneOpenLeft: false })}
+              className="sliding-pane-left"
+              hideHeader={true}
+            >
+              <Box flexBasis="100vw" bgcolor="#2f3136" overflow={isMobile ? "hidden" : "auto"}>
+                <Box display="flex" flexDirection="column" height="100vh" sx={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                }}>
+                  <Box display="flex" >
+                    <Box flexBasis="5rem">
+                      <SidebarWidget />
+                    </Box>
+                    <Box flexBasis="95.5vw">
+                      <Box flexBasis={null} >
+                        <ChannelNavbar />
+                        <ChannelBar setNavTitle={setNavTitle} />
+                      </Box>
                     </Box>
                   </Box>
                 </Box>
               </Box>
-            </Box>
-          </SlidingPane>
-          <SlidingPane
-            isOpen={state.isPaneOpenRight}
-            from="right"
-            width="70vw"
-            onRequestClose={() => setState({ isPaneOpenRight: false })}
-            className="sliding-pane-right"
-            hideHeader={true}
-          >
-            <Box flexBasis="100vw" bgcolor="#fff" onClick={() => setState({ isPaneOpenRight: false })}
-              sx={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}>
-              <Box display="flex" >
-                <Box flexBasis="70vw">
-                  <UserBar />
+            </SlidingPane>
+            <SlidingPane
+              isOpen={state.isPaneOpenRight}
+              from="right"
+              width="70vw"
+              onRequestClose={() => setState({ isPaneOpenRight: false })}
+              className="sliding-pane-right"
+              hideHeader={true}
+            >
+              <Box flexBasis="100vw" bgcolor="#fff" onClick={() => setState({ isPaneOpenRight: false })}
+                sx={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                }}>
+                <Box display="flex" >
+                  <Box flexBasis="70vw">
+                    <UserBar />
+                  </Box>
                 </Box>
               </Box>
-            </Box>
-          </SlidingPane>
-        </Box>
-      )}
+            </SlidingPane>
+          </Box>
+        )}
       </BrowserRouter>
-    {/* </Router> */}
+      {/* </Router> */}
     </div>
   );
 }
