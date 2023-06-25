@@ -45,13 +45,13 @@ const Navbar = ({ navTitle }) => {
             fontWeight: 'bold',
             color: '#7e838c',
             filter: 'drop-shadow(0px 0px 2px #000000)',
-            fontFamily: 'Open Sans',
+            fontFamily: 'GG Sans, sans-serif',
           }}
         />
         <Typography
           sx={{
             fontSize: '1rem',
-            fontFamily: 'Open Sans',
+            fontFamily: 'GG Sans, sans-serif',
             color: '#fff',
           }}
         >
@@ -69,7 +69,7 @@ const Navbar = ({ navTitle }) => {
         <Typography
           sx={{
             fontSize: isMobile ? '0.8rem' : '1rem',
-            fontFamily: 'Open Sans',
+            fontFamily: 'GG Sans, sans-serif',
             color: '#7e858c',
           }}
         >
@@ -99,7 +99,7 @@ const Navbar = ({ navTitle }) => {
             }}
           >
             <InputBase
-              sx={{ color: 'grey.100', fontSize: '0.8rem', fontFamily: 'Open Sans' }}
+              sx={{ color: 'grey.100', fontSize: '0.8rem', fontFamily: 'GG Sans, sans-serif' }}
               placeholder="Search"
               inputProps={{ 'aria-label': 'search' }}
             />

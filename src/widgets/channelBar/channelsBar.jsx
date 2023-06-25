@@ -50,7 +50,7 @@ const Channel = ({ id, name, unreadCount, handleClick }) => {
           display: 'flex',
           alignItems: 'center',
           fontSize: '1rem',
-          fontFamily: 'Open Sans',
+          fontFamily: 'GG Sans, sans-serif',
         }}
       >
         <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
@@ -70,7 +70,7 @@ const Channel = ({ id, name, unreadCount, handleClick }) => {
             color: 'white',
             fontSize: '0.8rem',
             fontWeight: 'semibold',
-            fontFamily: 'Open Sans',
+            fontFamily: 'GG Sans, sans-serif',
           }}
         >
           {unreadCount}
@@ -103,7 +103,7 @@ const ChannelCategory = ({ category, channels, setNavTitle }) => {
           cursor: 'pointer',
           fontSize: '0.8rem',
           fontWeight: 'bold',
-          fontFamily: 'Open Sans',
+          fontFamily: 'GG Sans, sans-serif',
         }}
         onClick={toggleDropdown}
       >
