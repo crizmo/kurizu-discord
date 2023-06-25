@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import SidebarWidget from "./widgets/sidebar/sidebarWidget"
 
 import ChannelNavbar from "./widgets/navbar/channelNav";
@@ -66,7 +66,9 @@ function App() {
   }
 
   return (
-    <Router>
+    // <Router>
+    <div>
+      <BrowserRouter>
       {!isMobile ? (
         <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
           <Box flexBasis="4.5rem" className="sidebar">
@@ -159,7 +161,9 @@ function App() {
           </SlidingPane>
         </Box>
       )}
-    </Router>
+      </BrowserRouter>
+    {/* </Router> */}
+    </div>
   );
 }
 
