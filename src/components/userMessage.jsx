@@ -14,7 +14,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
   let realTime = ""
 
   if (is12HourFormat) {
-    realTime = time;
+    realTime = "Today at " + time;
   } else {
     // const today = new Date();
     // const todayString = today.toISOString().split('T')[0];
@@ -44,7 +44,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
     // };
 
     // realTime = renderTime();
-    realTime = "Today at " + time;
+    realTime = time;
   }
 
 
