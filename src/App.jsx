@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // info
 import Home from "./pages/info/home";
@@ -41,32 +41,6 @@ import "react-sliding-pane/dist/react-sliding-pane.css";
 import { useState } from "react";
 
 import "./App.css";
-
-const Content = () => {
-  return (
-    <Routes>
-      {/* info */}
-      <Route path="/" element={<Home />} />
-      <Route path="/announcements" element={<Announcements />} />
-      <Route path="/about" element={<About />} />
-
-      {/* general */}
-      <Route path="/general" element={<General />} />
-
-      {/* projects */}
-      <Route path="/anyanime" element={<AnyAnime />} />
-      <Route path="/image2url" element={<Image2Url />} />
-      <Route path="/discordcards" element={<DiscordCards />} />
-      <Route path="/elina" element={<Elina />} />
-      <Route path="/cordle" element={<Cordle />} />
-      <Route path="/timely" element={<Timely />} />
-      <Route path="/emogit" element={<Emogit />} />
-      <Route path="/minikey" element={<Minikey />} />
-      <Route path="/type3d" element={<Type3d />} />
-      <Route path="/pixit" element={<Pixit />} />
-    </Routes>
-  );
-};
 
 function App() {
 
@@ -116,7 +90,7 @@ function App() {
   return (
     // <Router>
     <div>
-      <BrowserRouter>
+      <Router>
         {!isMobile ? (
           <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             <Box flexBasis="4.5rem" className="sidebar">
@@ -249,7 +223,7 @@ function App() {
             </SlidingPane>
           </Box>
         )}
-      </BrowserRouter>
+      </Router>
       {/* </Router> */}
     </div>
   );
