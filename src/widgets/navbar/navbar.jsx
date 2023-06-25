@@ -14,8 +14,14 @@ const Navbar = ({ navTitle }) => {
   if (navTitle === '/' || navTitle === '/about' || navTitle === '/announcements') {
     about = '👋 Welcome to Kurizu\'s Server!';
   } else if (navTitle === '/general') {
-    about = '📢 Just general chat!';
-  } else {
+    about = <span>📢 Join <a href="https://discord.gg/drunkbetch-782646778347388959" style={{ 
+      color: '#40c4fb',
+      textDecoration: 'underline',
+      textDecorationColor: '#40c4fb',
+      textDecorationThickness: '2px',
+   }}
+    >Discord</a> to get your messages featured here!</span>
+  } else if (navTitle === '/projects') {
     about = '📚 Some of my projects!';
   }
 
