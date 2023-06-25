@@ -69,6 +69,13 @@ const users = [
         roles: ['User'],
         about: 'chicken nuggets'
     },
+    {
+        id: 11,
+        username: 'Oli',
+        avatar: 'https://cdn.discordapp.com/avatars/259392249693995008/c15ae250f485553b148306cb5adae554.webp?size=1024',
+        roles: ['Admin'],
+        about: 'I was here'
+    },
 ];
 
 export default users;
