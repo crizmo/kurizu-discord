@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // info
 import Home from "../../pages/info/home";
@@ -20,7 +20,7 @@ import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
 
-const Content = ({ data }) => {
+const Content = () => {
     return (
         <Routes>
             {/* info */}
@@ -29,7 +29,7 @@ const Content = ({ data }) => {
             <Route path="/about" element={<About />} />
 
             {/* general */}
-            <Route path="/general" element={<General data={data} />} />
+            <Route path="/general" element={<General />} />
 
             {/* projects */}
             <Route path="/anyanime" element={<AnyAnime />} />
