@@ -16,35 +16,21 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
   if (is12HourFormat) {
     realTime = "Today at " + time;
   } else {
-    // const today = new Date();
-    // const todayString = today.toISOString().split('T')[0];
-    // const yesterday = new Date(today);
-    // yesterday.setDate(yesterday.getDate() - 1);
-    // const yesterdayString = yesterday.toISOString().split('T')[0];
-    // const timeString = time.split('T')[0];
-    // const timeStringArray = time.split('T')[1].split(':');
-    // const timeStringHours = parseInt(timeStringArray[0]);
-    // const timeStringMinutes = parseInt(timeStringArray[1]);
-    // const timeStringHours12 = timeStringHours > 12 ? timeStringHours - 12 : timeStringHours;
-    // const timeStringMinutesString = timeStringMinutes < 10 ? `0${timeStringMinutes}` : timeStringMinutes;
-    // const timeStringAmPm = timeStringHours >= 12 ? 'PM' : 'AM';
-    // const timeStringFinal = `${timeStringHours12}:${timeStringMinutesString} ${timeStringAmPm}`;
-    // const timeStringFinalToday = `Today at ${timeStringFinal}`;
-    // const timeStringFinalYesterday = `Yesterday at ${timeStringFinal}`;
-    // const timeStringFinalOther = `${timeString.split('-')[2]}/${timeString.split('-')[1]}/${timeString.split('-')[0]} at ${timeStringFinal}`;
-
-    // const renderTime = () => {
-    //   if (timeString === todayString) {
-    //     return timeStringFinalToday;
-    //   } else if (timeString === yesterdayString) {
-    //     return timeStringFinalYesterday;
-    //   } else {
-    //     return timeStringFinalOther;
-    //   }
-    // };
-
-    // realTime = renderTime();
-    realTime = time;
+    // the time is like 2023-06-25T14:14:43.509Z so we need to convert it to Today at 2:14 PM or Yesterday at 2:14 PM or 25/06/2023 at 2:14 PM
+    const date = new Date(time);
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    
+    if (date.toDateString() === today.toDateString()) {
+      realTime = "Today at " + date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    }
+    else if (date.toDateString() === yesterday.toDateString()) {
+      realTime = "Yesterday at " + date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    }
+    else {
+      realTime = date.toLocaleDateString('en-US', { day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true });
+    }
   }
 
 
@@ -63,7 +49,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           wordWrap: 'break-word',
           maxWidth: isMobile ? '80vw' : '50vw',
           whiteSpace: 'pre-line',
-          fontFamily: "Open Sans",
+          fontFamily: 'GG Sans, sans-serif',
         }}
       >
         {parts.map((part, index) => {

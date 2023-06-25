@@ -22,12 +22,12 @@ const User = ({ username, avatar, roles, about }) => {
                 <Typography sx={{
                     fontSize: '0.9rem',
                     fontWeight: 'semibold',
-                    fontFamily: "Open Sans",
+                    fontFamily: 'GG Sans, sans-serif',
                     color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#40c4fb' : '#878e95',
                 }}
 
                 >{username}</Typography>
-                <Typography sx={{ color: 'grey.500', fontSize: '0.8rem', fontFamily: "Open Sans" }}>
+                <Typography sx={{ color: 'grey.500', fontSize: '0.8rem', fontFamily: 'GG Sans, sans-serif' }}>
                     {about}
                 </Typography>
             </Box>

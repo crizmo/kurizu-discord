@@ -63,7 +63,7 @@ const Server = ({ isActive, serverName, serverIcon }) => {
             zIndex: 1,
             display: 'flex',
             alignItems: 'center',
-            fontFamily: "Open Sans"
+            fontFamily: 'GG Sans, sans-serif'
           }}
         >
           {serverName}
