@@ -7,6 +7,46 @@ if (window.innerWidth < 600) {
 }
 
 const UserMessage = ({ username, time, avatar, role, message, image }) => {
+
+  const regex = /^(1[0-2]|0?[1-9]):[0-5][0-9]$/;
+  const is12HourFormat = regex.test(time);
+
+  let realTime = ""
+
+  if (is12HourFormat) {
+    realTime = "Today at " + time;
+  } else {
+    const today = new Date();
+    const todayString = today.toISOString().split('T')[0];
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayString = yesterday.toISOString().split('T')[0];
+    const timeString = time.split('T')[0];
+    const timeStringArray = time.split('T')[1].split(':');
+    const timeStringHours = parseInt(timeStringArray[0]);
+    const timeStringMinutes = parseInt(timeStringArray[1]);
+    const timeStringHours12 = timeStringHours > 12 ? timeStringHours - 12 : timeStringHours;
+    const timeStringMinutesString = timeStringMinutes < 10 ? `0${timeStringMinutes}` : timeStringMinutes;
+    const timeStringAmPm = timeStringHours >= 12 ? 'PM' : 'AM';
+    const timeStringFinal = `${timeStringHours12}:${timeStringMinutesString} ${timeStringAmPm}`;
+    const timeStringFinalToday = `Today at ${timeStringFinal}`;
+    const timeStringFinalYesterday = `Yesterday at ${timeStringFinal}`;
+    const timeStringFinalOther = `${timeString.split('-')[2]}/${timeString.split('-')[1]}/${timeString.split('-')[0]} at ${timeStringFinal}`;
+
+    const renderTime = () => {
+      if (timeString === todayString) {
+        return timeStringFinalToday;
+      } else if (timeString === yesterdayString) {
+        return timeStringFinalYesterday;
+      } else {
+        return timeStringFinalOther;
+      }
+    };
+
+    realTime = renderTime();
+  }
+
+
   const renderMessageContent = () => {
     const linkRegex = /<a\s+href=(['"])(.*?)\1>(.*?)<\/a>/g; // Regular expression to match <a href="...">...</a>
     const imageRegex = /<img\s+src=(['"])(.*?)\1\s*\/?>/g; // Regular expression to match <img src="..." ... />
@@ -22,7 +62,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           wordWrap: 'break-word',
           maxWidth: isMobile ? '80vw' : '50vw',
           whiteSpace: 'pre-line',
-          fontFamily: "GG Sans, sans-serif"
+          fontFamily: "Open Sans",
         }}
       >
         {parts.map((part, index) => {
@@ -66,7 +106,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
             );
           } else {
             return <React.Fragment key={index}>
-                {part}<br />
+              {part}<br />
             </React.Fragment>;
           }
         })}
@@ -110,7 +150,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           }}
         >
           {username}
-          <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>Today at {time}</span>
+          <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>{realTime}</span>
         </Typography>
         {renderMessageContent()}
         {image ? (

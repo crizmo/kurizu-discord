@@ -28,7 +28,7 @@ const ChannelNavbar = () => {
           left: '10%',
         }}
       >
-        <Typography sx={{ color: '#eff0f2', fontSize: '1rem', fontWeight: 'bold', fontFamily: "GG Sans, sans-serif" }}>
+        <Typography sx={{ color: '#eff0f2', fontSize: '1rem', fontWeight: 'bold', fontFamily: "Open Sans" }}>
           {serverName}
         </Typography>
       </Box>
