@@ -14,7 +14,7 @@ const MessageBar = () => {
         try {
             // use UTC time to avoid timezone issues
             const currentTime = new Date().toUTCString();
-            
+
             if (
                 data.pfp === '' ||
                 !data.pfp.includes('https') ||

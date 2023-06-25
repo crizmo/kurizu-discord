@@ -16,34 +16,35 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
   if (is12HourFormat) {
     realTime = "Today at " + time;
   } else {
-    const today = new Date();
-    const todayString = today.toISOString().split('T')[0];
-    const yesterday = new Date(today);
-    yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayString = yesterday.toISOString().split('T')[0];
-    const timeString = time.split('T')[0];
-    const timeStringArray = time.split('T')[1].split(':');
-    const timeStringHours = parseInt(timeStringArray[0]);
-    const timeStringMinutes = parseInt(timeStringArray[1]);
-    const timeStringHours12 = timeStringHours > 12 ? timeStringHours - 12 : timeStringHours;
-    const timeStringMinutesString = timeStringMinutes < 10 ? `0${timeStringMinutes}` : timeStringMinutes;
-    const timeStringAmPm = timeStringHours >= 12 ? 'PM' : 'AM';
-    const timeStringFinal = `${timeStringHours12}:${timeStringMinutesString} ${timeStringAmPm}`;
-    const timeStringFinalToday = `Today at ${timeStringFinal}`;
-    const timeStringFinalYesterday = `Yesterday at ${timeStringFinal}`;
-    const timeStringFinalOther = `${timeString.split('-')[2]}/${timeString.split('-')[1]}/${timeString.split('-')[0]} at ${timeStringFinal}`;
+    // const today = new Date();
+    // const todayString = today.toISOString().split('T')[0];
+    // const yesterday = new Date(today);
+    // yesterday.setDate(yesterday.getDate() - 1);
+    // const yesterdayString = yesterday.toISOString().split('T')[0];
+    // const timeString = time.split('T')[0];
+    // const timeStringArray = time.split('T')[1].split(':');
+    // const timeStringHours = parseInt(timeStringArray[0]);
+    // const timeStringMinutes = parseInt(timeStringArray[1]);
+    // const timeStringHours12 = timeStringHours > 12 ? timeStringHours - 12 : timeStringHours;
+    // const timeStringMinutesString = timeStringMinutes < 10 ? `0${timeStringMinutes}` : timeStringMinutes;
+    // const timeStringAmPm = timeStringHours >= 12 ? 'PM' : 'AM';
+    // const timeStringFinal = `${timeStringHours12}:${timeStringMinutesString} ${timeStringAmPm}`;
+    // const timeStringFinalToday = `Today at ${timeStringFinal}`;
+    // const timeStringFinalYesterday = `Yesterday at ${timeStringFinal}`;
+    // const timeStringFinalOther = `${timeString.split('-')[2]}/${timeString.split('-')[1]}/${timeString.split('-')[0]} at ${timeStringFinal}`;
 
-    const renderTime = () => {
-      if (timeString === todayString) {
-        return timeStringFinalToday;
-      } else if (timeString === yesterdayString) {
-        return timeStringFinalYesterday;
-      } else {
-        return timeStringFinalOther;
-      }
-    };
+    // const renderTime = () => {
+    //   if (timeString === todayString) {
+    //     return timeStringFinalToday;
+    //   } else if (timeString === yesterdayString) {
+    //     return timeStringFinalYesterday;
+    //   } else {
+    //     return timeStringFinalOther;
+    //   }
+    // };
 
-    realTime = renderTime();
+    // realTime = renderTime();
+    realTime = "Today at " + time;
   }
 
 
