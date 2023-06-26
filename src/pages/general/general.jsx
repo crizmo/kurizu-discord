@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Box } from '@mui/material';
 
 import CompleteMessage from '../../components/completeMessage';
@@ -6,9 +6,9 @@ import { supabase, channel } from '../../data/supabase';
 
 const General = () => {
   const [messages, setMessages] = useState([]);
+  const messagesEndRef = useRef(null);
 
   const handleNewMessage = (payload) => {
-
     const newMessage = {
       username: payload.payload.name,
       time: payload.payload.time,
@@ -21,7 +21,7 @@ const General = () => {
   };
 
   channel.on('broadcast', { event: 'supa' }, (payload) => {
-    handleNewMessage(payload)
+    handleNewMessage(payload);
   });
 
   const fetchMessages = async () => {
@@ -49,13 +49,34 @@ const General = () => {
     }
   };
 
-  setTimeout(() => {
+  useEffect(() => {
+    const scrollToBottom = () => {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     fetchMessages();
-  }, 3000);
+
+    const interval = setInterval(() => {
+      fetchMessages();
+    }, 3000);
+
+    scrollToBottom();
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <Box width="100%" height="90vh" backgroundColor="#313338" overflow="auto">
       <CompleteMessage messages={messages} />
+      <div ref={messagesEndRef} />
     </Box>
   );
 };
