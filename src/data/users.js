@@ -30,7 +30,7 @@ const users = [
     {
         id: 5,
         username: 'Raphael',
-        avatar: 'https://cdn.discordapp.com/attachments/910210865683386408/1122144424307216444/raph.png',
+        avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1122765302762053694/raph.png',
         roles: ['White'],
         about: 'Coding >_< is cool !'
     },
@@ -65,7 +65,7 @@ const users = [
     {
         id: 10,
         username: 'dainfloop',
-        avatar: 'https://cdn.discordapp.com/attachments/1103215197713354803/1122165054847062160/daln.png',
+        avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1122765027452133437/daln.png',
         roles: ['User'],
         about: 'chicken nuggets'
     },

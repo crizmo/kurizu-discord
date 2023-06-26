@@ -2,11 +2,16 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Box } from '@mui/material';
 
 import CompleteMessage from '../../components/completeMessage';
-import { supabase, channel } from '../../data/supabase';
+import { supabase } from '../../data/supabase';
 
 const General = () => {
   const [messages, setMessages] = useState([]);
   const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    console.log('scroll');
+  };
 
   const handleNewMessage = (payload) => {
     const newMessage = {
@@ -18,11 +23,13 @@ const General = () => {
     };
 
     setMessages((prevMessages) => [...prevMessages, newMessage]);
+    scrollToBottom();
   };
 
-  channel.on('broadcast', { event: 'supa' }, (payload) => {
+  supabase.channel('general').on('broadcast', { event: 'supa' }, (payload) => {
     handleNewMessage(payload);
-  });
+  })
+    .subscribe();
 
   const fetchMessages = async () => {
     try {
@@ -43,6 +50,7 @@ const General = () => {
             message: message.message,
           }))
         );
+        scrollToBottom();
       }
     } catch (error) {
       // console.error('Error fetching messages:', error);
@@ -50,28 +58,11 @@ const General = () => {
   };
 
   useEffect(() => {
-    const scrollToBottom = () => {
-      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
-    fetchMessages();
-
-    const interval = setInterval(() => {
+    console.log('effect');
+    setTimeout(() => {
       fetchMessages();
     }, 3000);
-
-    scrollToBottom();
-
-    return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <Box width="100%" height="90vh" backgroundColor="#313338" overflow="auto">

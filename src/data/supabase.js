@@ -11,8 +11,4 @@ const supabase = createClient(supabaseUrl, supabaseKey, {
   }
 });
 
-const channel = supabase.channel('general');
-
-channel.subscribe();
-
-export { supabase, channel };
+export { supabase };
