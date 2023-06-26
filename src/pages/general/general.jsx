@@ -10,7 +10,6 @@ const General = () => {
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    console.log('scroll');
   };
 
   const handleNewMessage = (payload) => {
@@ -58,7 +57,6 @@ const General = () => {
   };
 
   useEffect(() => {
-    console.log('effect');
     setTimeout(() => {
       fetchMessages();
     }, 3000);
