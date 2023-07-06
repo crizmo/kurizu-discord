@@ -35,6 +35,12 @@ const servers = [
       serverIcon: 'https://media.discordapp.net/attachments/977949070893125632/999255947564285972/replit.png',
       navigate: 'https://replit.com/@kurizu'
     },
+    {
+      id: 7, isActive: false,
+      serverName: 'NPM',
+      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/1126373174188191744/npm-logo.png',
+      navigate: 'https://www.npmjs.com/~kurizu'
+    },
   ];
 
   export default servers;
