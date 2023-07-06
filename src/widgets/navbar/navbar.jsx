@@ -23,9 +23,9 @@ const Navbar = ({ navTitle }) => {
         textDecorationThickness: '2px',
       }}
     >Discord</a> to get your messages featured here!</span>
-  } else if (navTitle === '/projects') {
-    about = '📚 Some of my projects!';
-  }
+  } else {
+    about = '🎴 Some of my projects!';
+  } 
 
   let isMobile = false;
   if (window.innerWidth < 800) {
