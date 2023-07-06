@@ -11,7 +11,7 @@ const Announcements = () => {
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
       message: "@everyone \n Hello World! ",
-      image: "https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg",
+      image: "https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png",
     },
     {
       username: "Kurizu",
