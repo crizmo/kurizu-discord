@@ -16,7 +16,7 @@ const users = [
     {
         id: 3,
         username: 'Count Trapula',
-        avatar: 'https://cdn.discordapp.com/avatars/161963504226533376/49e0a0d4fa60413ee51bf69962fcb291.webp',
+        avatar: 'https://cdn.discordapp.com/attachments/977949070893125632/1126380203413868604/counttrapula.png',
         roles: ['Admin'],
         about: 'Clone'
     },
@@ -43,36 +43,50 @@ const users = [
     },
     {
         id: 7,
+        username: 'Swave',
+        avatar: 'https://cdn.discordapp.com/attachments/977949070893125632/1126379608086953984/swave.png',
+        roles: ['User'],
+        about: 'Person below hates Hu Tao'
+    },
+    {
+        id: 8,
+        username: 'Hu Tao',
+        avatar: 'https://cdn.discordapp.com/attachments/977949070893125632/1126382605865074858/hutao.png',
+        roles: ['User'],
+        about: 'Simping for Hu Tao'
+    },
+    {
+        id: 9,
         username: 'Liam',
         avatar: 'https://cdn.discordapp.com/attachments/437067256049172491/1121773162967867553/5.png',
         roles: ['User'],
         about: 'Developer'
     },
     {
-        id: 8,
+        id: 10,
         username: 'ErikoXDev',
         avatar: 'https://cdn.discordapp.com/attachments/1122075854923632690/1122076009185947648/eriko4klogoFull.png',
         roles: ['User'],
         about: 'Baller'
     },
     {
-        id: 9,
+        id: 11,
         username: 'Kat21',
         avatar: 'https://cdn.discordapp.com/attachments/1122159848663027822/1122160050740412467/BigCat01.png',
         roles: ['User'],
         about: 'Hi there 👋'
     },
     {
-        id: 10,
+        id: 12,
         username: 'dainfloop',
         avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1122765027452133437/daln.png',
         roles: ['User'],
         about: 'chicken nuggets'
     },
     {
-        id: 11,
+        id: 13,
         username: 'Oli',
-        avatar: 'https://cdn.discordapp.com/avatars/259392249693995008/c15ae250f485553b148306cb5adae554.webp?size=1024',
+        avatar: 'https://cdn.discordapp.com/avatars/259392249693995008/c15ae250f485553b148306cb5adae554.webp',
         roles: ['Admin'],
         about: 'I was here'
     },
