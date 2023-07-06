@@ -9,8 +9,6 @@ import About from "../../pages/info/about";
 import General from "../../pages/general/general";
 
 // projects
-import AnyAnime from "../../pages/projects/anyanime";
-import Image2Url from "../../pages/projects/image2url";
 import DiscordCards from "../../pages/projects/discordcards";
 import Elina from "../../pages/projects/elina";
 import Cordle from "../../pages/projects/cordle";
@@ -19,6 +17,11 @@ import Emogit from "../../pages/projects/emogit";
 import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
+
+// NPM
+import AnyAnime from "../../pages/npm/anyanime";
+import Image2Url from "../../pages/npm/image2url";
+import Jng from "../../pages/npm/jng";
 
 const Content = () => {
     return (
@@ -32,8 +35,6 @@ const Content = () => {
             <Route path="/general" element={<General />} />
 
             {/* projects */}
-            <Route path="/anyanime" element={<AnyAnime />} />
-            <Route path="/image2url" element={<Image2Url />} />
             <Route path="/discordcards" element={<DiscordCards />} />
             <Route path="/elina" element={<Elina />} />
             <Route path="/cordle" element={<Cordle />} />
@@ -42,6 +43,11 @@ const Content = () => {
             <Route path="/minikey" element={<Minikey />} />
             <Route path="/type3d" element={<Type3d />} />
             <Route path="/pixit" element={<Pixit />} />
+
+            {/* NPM */}
+            <Route path="/anyanime" element={<AnyAnime />} />
+            <Route path="/image2url" element={<Image2Url />} />
+            <Route path="/jng" element={<Jng />} />
         </Routes>
     );
 }
