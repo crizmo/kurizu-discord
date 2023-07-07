@@ -37,7 +37,7 @@ const Jng = () => {
             "\n3 - png - is the format that i want to convert the image to " +
             "\n4 - anime - is the tag that i want to add to the image " +
             "\n\n" +
-            "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord or Instagram. or Github"
+            "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord, Instagram or Github"
         }
     ];
     

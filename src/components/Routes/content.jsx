@@ -22,6 +22,7 @@ import Pixit from "../../pages/projects/pixit";
 import AnyAnime from "../../pages/npm/anyanime";
 import Image2Url from "../../pages/npm/image2url";
 import Jng from "../../pages/npm/jng";
+import XlsxMongo from "../../pages/npm/xlsx-mongo";
 
 const Content = () => {
     return (
@@ -47,6 +48,7 @@ const Content = () => {
             {/* NPM */}
             <Route path="/anyanime" element={<AnyAnime />} />
             <Route path="/image2url" element={<Image2Url />} />
+            <Route path="/xlsx-mongo" element={<XlsxMongo />} />
             <Route path="/jng" element={<Jng />} />
         </Routes>
     );

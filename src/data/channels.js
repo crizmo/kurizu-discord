@@ -31,7 +31,8 @@ const channels = [
         channels: [
             { id: 13, name: 'AnyAnime', unreadCount: 0, isActive: false, navigateTo: '/anyanime' },
             { id: 14, name: 'Image2Url', unreadCount: 0, isActive: false, navigateTo: '/image2url' },
-            { id: 15, name: 'JNG', unreadCount: 0, isActive: false, navigateTo: '/jng' },
+            { id: 15, name: 'XLSX-Mongo', unreadCount: 0, isActive: false, navigateTo: '/xlsx-mongo' },
+            { id: 16, name: 'JNG', unreadCount: 0, isActive: false, navigateTo: '/jng' },
         ],
     },
 
