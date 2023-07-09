@@ -33,6 +33,7 @@ const channels = [
             { id: 14, name: 'Image2Url', unreadCount: 0, isActive: false, navigateTo: '/image2url' },
             { id: 15, name: 'XLSX-Mongo', unreadCount: 0, isActive: false, navigateTo: '/xlsx-mongo' },
             { id: 16, name: 'JNG', unreadCount: 0, isActive: false, navigateTo: '/jng' },
+            { id: 17, name: 'CustomJS', unreadCount: 0, isActive: false, navigateTo: '/customjs' },
         ],
     },
 

@@ -23,6 +23,7 @@ import AnyAnime from "../../pages/npm/anyanime";
 import Image2Url from "../../pages/npm/image2url";
 import Jng from "../../pages/npm/jng";
 import XlsxMongo from "../../pages/npm/xlsx-mongo";
+import CustomJs from "../../pages/npm/customjs";
 
 const Content = () => {
     return (
@@ -50,6 +51,7 @@ const Content = () => {
             <Route path="/image2url" element={<Image2Url />} />
             <Route path="/xlsx-mongo" element={<XlsxMongo />} />
             <Route path="/jng" element={<Jng />} />
+            <Route path="/customjs" element={<CustomJs />} />
         </Routes>
     );
 }
