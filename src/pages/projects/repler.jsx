@@ -19,9 +19,9 @@ const Repler = () => {
                 "If you want to use Repler, you can do so by :-\n\n" +
                 "<img src='https://cdn.discordapp.com/attachments/1127935019080486914/1127935050042851499/usage.png' >" +
                 "\n\n\n" +
-                "Or clone the repo and run it locally :-\n" +
-                "Check the github repo at <a href='https://github.com/crizmo/repler'>Github</a>" +
-                "\n" +
+                "Or clone the repo from <a href='https://github.com/crizmo/repler'>Github</a> and run it locally :-\n" +
+                "\nOpen an issue if you have any problems." +
+                "\n\n" +
                 "If you have any questions, feel free to ask in the <a href='https://discord.gg/drunkbetch-782646778347388959'>Discord server</a>."
         },
         {
