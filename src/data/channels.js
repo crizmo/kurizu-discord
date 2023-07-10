@@ -24,16 +24,17 @@ const channels = [
             { id: 10, name: 'Minikey', unreadCount: 0, isActive: false, navigateTo: '/minikey' },
             { id: 11, name: 'Type3D', unreadCount: 0, isActive: false, navigateTo: '/type3d' },
             { id: 12, name: 'Pixit', unreadCount: 0, isActive: false, navigateTo: '/pixit' },
+            { id: 13, name: 'Repler', unreadCount: 0, isActive: false, navigateTo: '/repler' },
         ],
     },
     {
         category: '📦 NPM packages',
         channels: [
-            { id: 13, name: 'AnyAnime', unreadCount: 0, isActive: false, navigateTo: '/anyanime' },
-            { id: 14, name: 'Image2Url', unreadCount: 0, isActive: false, navigateTo: '/image2url' },
-            { id: 15, name: 'XLSX-Mongo', unreadCount: 0, isActive: false, navigateTo: '/xlsx-mongo' },
-            { id: 16, name: 'JNG', unreadCount: 0, isActive: false, navigateTo: '/jng' },
-            { id: 17, name: 'CustomJS', unreadCount: 0, isActive: false, navigateTo: '/customjs' },
+            { id: 14, name: 'AnyAnime', unreadCount: 0, isActive: false, navigateTo: '/anyanime' },
+            { id: 15, name: 'Image2Url', unreadCount: 0, isActive: false, navigateTo: '/image2url' },
+            { id: 16, name: 'XLSX-Mongo', unreadCount: 0, isActive: false, navigateTo: '/xlsx-mongo' },
+            { id: 17, name: 'JNG', unreadCount: 0, isActive: false, navigateTo: '/jng' },
+            { id: 18, name: 'CustomJS', unreadCount: 0, isActive: false, navigateTo: '/customjs' },
         ],
     },
 

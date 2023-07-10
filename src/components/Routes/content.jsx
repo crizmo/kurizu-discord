@@ -17,6 +17,7 @@ import Emogit from "../../pages/projects/emogit";
 import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
+import Repler from "../../pages/projects/repler";
 
 // NPM
 import AnyAnime from "../../pages/npm/anyanime";
@@ -45,6 +46,7 @@ const Content = () => {
             <Route path="/minikey" element={<Minikey />} />
             <Route path="/type3d" element={<Type3d />} />
             <Route path="/pixit" element={<Pixit />} />
+            <Route path="/repler" element={<Repler />} />
 
             {/* NPM */}
             <Route path="/anyanime" element={<AnyAnime />} />
