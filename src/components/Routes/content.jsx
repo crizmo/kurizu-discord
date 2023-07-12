@@ -26,6 +26,9 @@ import Jng from "../../pages/npm/jng";
 import XlsxMongo from "../../pages/npm/xlsx-mongo";
 import CustomJs from "../../pages/npm/customjs";
 
+/* Threads */
+import XlsxApi from "../../pages/npm/threads/xlsxapi";
+
 const Content = () => {
     return (
         <Routes>
@@ -54,6 +57,9 @@ const Content = () => {
             <Route path="/xlsx-mongo" element={<XlsxMongo />} />
             <Route path="/jng" element={<Jng />} />
             <Route path="/customjs" element={<CustomJs />} />
+
+            {/* Threads */}
+            <Route path="/xlsx-mongo/api" element={<XlsxApi />} />
         </Routes>
     );
 }

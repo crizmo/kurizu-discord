@@ -9,7 +9,7 @@ const ChannelNavbar = () => {
     <Box
       sx={{
         position: 'relative',
-        height: '15vh',
+        height: '12vh',
       }}
     >
       <img

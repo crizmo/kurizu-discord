@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import { KeyboardArrowDown, KeyboardArrowRight, Tag } from '@mui/icons-material';
+import { KeyboardArrowDown, KeyboardArrowRight, Tag, SubdirectoryArrowRight } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import channels from '../../data/channels';
+import threads from '../../data/threads';
 
-const Channel = ({ id, name, unreadCount, handleClick }) => {
+const Channel = ({ id, name, unreadCount, ping, handleClick}) => {
   const location = useLocation();
-  let isActivePage = location.pathname === "/"+name.toLowerCase();
-  if(location.pathname === "/" || location.pathname === ""){
+  let isActivePage = location.pathname === "/" + name.toLowerCase();
+  if (location.pathname === "/" || location.pathname === "") {
     isActivePage = name.toLowerCase() === "home";
-  } else if (location.pathname === "/discordcards"){
+  } else if (location.pathname === "/discordcards") {
     isActivePage = name.toLowerCase() === "discord cards";
   }
+
   return (
     <Box
       sx={{
@@ -45,7 +47,7 @@ const Channel = ({ id, name, unreadCount, handleClick }) => {
       />
       <Typography
         sx={{
-          color: isActivePage ? 'white' : '#878e95',
+          color: unreadCount > 0 || isActivePage ? 'white' : '#878e95',
           fontWeight: 'semibold',
           display: 'flex',
           alignItems: 'center',
@@ -53,10 +55,10 @@ const Channel = ({ id, name, unreadCount, handleClick }) => {
           fontFamily: 'GG Sans, sans-serif',
         }}
       >
-        <Tag sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
+        <Tag sx={{ marginRight: '4px', fontSize: '1.2rem' }} />
         {name.toLowerCase()}
       </Typography>
-      {unreadCount > 0 && (
+      {ping > 0 && (
         <Box
           sx={{
             marginLeft: 'auto',
@@ -73,9 +75,60 @@ const Channel = ({ id, name, unreadCount, handleClick }) => {
             fontFamily: 'GG Sans, sans-serif',
           }}
         >
-          {unreadCount}
+          {ping}
         </Box>
       )}
+    </Box>
+  );
+};
+
+const Thread = ({ id, name, parentEndpoint, handleClick }) => {
+  const location = useLocation();
+
+  const isActivePage = location.pathname === parentEndpoint + "/" + name.toLowerCase();
+
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        padding: '4px',
+        cursor: 'pointer',
+        backgroundColor: isActivePage ? '#3f4249' : 'transparent',
+        marginRight: '8px',
+        marginLeft: '16px',
+        marginTop: '4px',
+        borderRadius: '4px',
+        '&:hover': {
+          backgroundColor: '#3f4249',
+        },
+      }}
+      onClick={() => {
+        handleClick(id);
+      }}
+    >
+      <Box
+        sx={{
+          height: '8px',
+          width: '8px',
+          borderRadius: '50%',
+          backgroundColor: 'transparent',
+          marginRight: '8px',
+        }}
+      />
+      <Typography
+        sx={{
+          color: isActivePage ? 'white' : '#878e95',
+          fontWeight: 'semibold',
+          display: 'flex',
+          alignItems: 'center',
+          fontSize: '1rem',
+          fontFamily: 'GG Sans, sans-serif',
+        }}
+      >
+        <SubdirectoryArrowRight sx={{ marginRight: '4px', fontSize: '1rem', fontWeight: 'bold' }} />
+        {name.toLowerCase()}
+      </Typography>
     </Box>
   );
 };
@@ -118,13 +171,29 @@ const ChannelCategory = ({ category, channels, setNavTitle }) => {
       {isOpen && (
         <Box>
           {channels.map((channel) => (
-            <Channel
-              key={channel.id}
-              id={channel.id}
-              name={channel.name}
-              unreadCount={channel.unreadCount}
-              handleClick={() => handleClick(channel.id, channel.navigateTo)}
-            />
+            <React.Fragment key={channel.id}>
+              <Channel
+                id={channel.id}
+                name={channel.name}
+                unreadCount={channel.unreadCount}
+                ping={channel.ping}
+                handleClick={() => handleClick(channel.id, channel.navigateTo)}
+              />
+              {
+                threads.map((thread) => (
+                  thread.parentEndpoint === channel.navigateTo ? (
+                    <Thread
+                      key={thread.id}
+                      id={thread.id}
+                      name={thread.name}
+                      parentEndpoint={thread.parentEndpoint}
+                      handleClick={() => handleClick(thread.id, thread.navigateTo)}
+                    />
+                  ) : null
+                ))
+
+              }
+            </React.Fragment>
           ))}
         </Box>
       )}
@@ -136,9 +205,12 @@ const ChannelBar = ({ setNavTitle }) => {
   const [activeChannelId, setActiveChannelId] = useState(1);
 
   return (
-    <Box width="100%" height="85vh" backgroundColor="#2b2d31" overflow="auto">
+    <Box width="100%" height="88vh" backgroundColor="#2b2d31" overflow="auto">
       {channels.map((category) => (
-        <Box key={category.category} sx={{ cursor: 'pointer', userSelect: 'none', WebkitTapHighlightColor: 'transparent' }} > 
+        <Box
+          key={category.category}
+          sx={{ cursor: 'pointer', userSelect: 'none', WebkitTapHighlightColor: 'transparent' }}
+        >
           <ChannelCategory
             key={category.category}
             category={category.category}
