@@ -36,60 +36,67 @@ const users = [
     },
     {
         id: 6,
+        username: 'coding398',
+        avatar: 'https://cdn.discordapp.com/avatars/626618189450838027/451d6abf0fb1b7850ba08d29cbb60978.webp?size=1024',
+        roles: ['Code'],
+        about: "G'day lads"
+    },
+    {
+        id: 7,
         username: 'chikn_man',
         avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg',
         roles: ['Poop Eater'],
         about: 'Poop'
     },
     {
-        id: 7,
+        id: 8,
         username: 'Swave',
         avatar: 'https://cdn.discordapp.com/attachments/977949070893125632/1126379608086953984/swave.png',
         roles: ['User'],
         about: 'Person below hates Hu Tao'
     },
     {
-        id: 8,
+        id: 9,
         username: 'Hu Tao',
         avatar: 'https://cdn.discordapp.com/attachments/977949070893125632/1126382605865074858/hutao.png',
         roles: ['User'],
         about: 'Simping for Hu Tao'
     },
     {
-        id: 9,
+        id: 10,
         username: 'Liam',
         avatar: 'https://cdn.discordapp.com/attachments/437067256049172491/1121773162967867553/5.png',
         roles: ['User'],
         about: 'Developer'
     },
     {
-        id: 10,
+        id: 11,
         username: 'ErikoXDev',
         avatar: 'https://cdn.discordapp.com/attachments/1122075854923632690/1122076009185947648/eriko4klogoFull.png',
         roles: ['User'],
         about: 'Baller'
     },
     {
-        id: 11,
+        id: 12,
         username: 'Kat21',
         avatar: 'https://cdn.discordapp.com/attachments/1122159848663027822/1122160050740412467/BigCat01.png',
         roles: ['User'],
         about: 'Hi there 👋'
     },
     {
-        id: 12,
+        id: 13,
         username: 'dainfloop',
         avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1122765027452133437/daln.png',
         roles: ['User'],
         about: 'chicken nuggets'
     },
     {
-        id: 13,
+        id: 14,
         username: 'Oli',
         avatar: 'https://cdn.discordapp.com/avatars/259392249693995008/c15ae250f485553b148306cb5adae554.webp',
         roles: ['Admin'],
         about: 'I was here'
-    },
+    }
 ];
 
 export default users;
