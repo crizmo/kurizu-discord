@@ -3,7 +3,7 @@
 Discord desktop app themed portfolio website made using React and Vite!
 
 <div style="border-radius: 50px; overflow: hidden;">
-  <img src="https://cdn.discordapp.com/attachments/977949070893125632/1122103647023669338/kurizusite.png" alt="Kurizu" style="width: 100%;">
+  <img src="https://cdn.discordapp.com/attachments/977949070893125632/1130465364946468937/site.png" alt="Kurizu" style="width: 100%;">
 </div>
 
 ## Code
