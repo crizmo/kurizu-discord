@@ -14,12 +14,17 @@ const XlsxMongo = () => {
                 
                 "<br><br>Links:" +
                 "<br><a href='https://www.npmjs.com/package/xlsx-mongo'>NPM</a>" +
-                "<br><a href='https://github.com/crizmo/xlsx-mongo'>GitHub</a>" +
-                "<br><br><a href='https://www.npmjs.com/package/xlsx-mongo'>" +
-                "<img alt='npm' src='https://img.shields.io/npm/dt/xlsx-mongo'>" +
-                "</a><br><a href='https://github.com/crizmo/xlsx-mongo'>" +
-                "<img alt='GitHub Repo' src='https://img.shields.io/github/stars/crizmo/xlsx-mongo?style=social'>" +
-                "</a>"
+                "<br><a href='https://github.com/crizmo/xlsx-mongo'>GitHub</a>",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/npm/dt/xlsx-mongo',
+                    alt: 'npm downloads'
+                },
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/xlsx-mongo?style=social',
+                    alt: 'github stars'
+                }
+            ],
         },
         {
             username: "Kurizu",

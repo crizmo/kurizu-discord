@@ -10,8 +10,8 @@ const Announcements = () => {
       time: "12:00",
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
-      message: "@everyone \n Hello World! ",
-      image: "https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png",
+      message: "@everyone \n Hello World! " +
+        "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
     },
     {
       username: "Kurizu",

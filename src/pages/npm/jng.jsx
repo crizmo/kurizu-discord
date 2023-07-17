@@ -14,12 +14,17 @@ const Jng = () => {
                 "<br>Basically it uploads images to cloudinary then while receiving the url, it converts the image to the desired format." +
                 "<br><br>Links:" +
                 "<br><a href='https://www.npmjs.com/package/jng'>NPM</a> " +
-                "| <a href='https://github.com/crizmo/JNG'>GitHub</a>" +
-                "<br><br><a href='https://www.npmjs.com/package/jng'>" +
-                "<img alt='npm' src='https://img.shields.io/npm/dt/jng'>" +
-                "</a><br><a href='https://github.com/crizmo/JNG'>" +
-                "<img alt='GitHub Repo' src='https://img.shields.io/github/stars/crizmo/JNG?style=social'>" +
-                "</a>"
+                "| <a href='https://github.com/crizmo/JNG'>GitHub</a>",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/npm/dt/jng',
+                    alt: 'npm downloads'
+                },
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/JNG?style=social',
+                    alt: 'github stars'
+                }
+            ],
         },
         {
             username: "Kurizu",

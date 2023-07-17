@@ -13,10 +13,13 @@ const XlsxApi = () => {
             message: "Excel Mongo API is built using the xlsx-mongo npm package" +
                 "<br><br>Links:" +
                 "<br><a href='https://rapidapi.com/Kurizu/api/excel-mongo1/'>Rapid API</a>" +
-                "<br><a href='https://github.com/crizmo/xlsx-mongo-api'>GitHub</a><br>" +
-                "<br><a href='https://github.com/crizmo/xlsx-mongo-api'>" +
-                "<img alt='GitHub Repo' src='https://img.shields.io/github/stars/crizmo/xlsx-mongo-api?style=social'>" +
-                "</a>"
+                "<br><a href='https://github.com/crizmo/xlsx-mongo-api'>GitHub</a><br>",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/xlsx-mongo-api?style=social',
+                    alt: 'github stars'
+                }
+            ],
         },
         {
             username: "Kurizu",

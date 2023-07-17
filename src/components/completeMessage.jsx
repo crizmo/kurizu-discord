@@ -15,7 +15,7 @@ const CompleteMessage = ({ messages }) => {
                         avatar={message.avatar}
                         role={message.role}
                         message={message.message}
-                        image={message.image ? message.image : null}
+                        badgeImages={message.badgeImages ? message.badgeImages : null}
                     />
                 </Box>
             ))}

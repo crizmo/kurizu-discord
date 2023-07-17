@@ -45,15 +45,17 @@ const Elina = () => {
                 "<br>" +
                 "<a href='https://elina-bot.netlify.app/'>Website</a>" +
                 "<br>" +
-                "<a href='https://github.com/crizmo/Elina-dev'>" +
-                "<img alt='GitHub Repo stars' src='https://img.shields.io/github/stars/crizmo/elina-dev?style=social'>" +
-                "</a>" +
-                "<br><br>" +
                 "The website has all the commands and info you need to know about Elina." +
                 "<br>" +
                 "Enjoy!" +
                 "<br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/912537423160942593/912537520150020156/elina_info.jpg' alt='homepgimg' height='150px' width='auto' style='border-radius: 8px;'>"
+                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/912537423160942593/912537520150020156/elina_info.jpg' alt='homepgimg' height='150px' width='auto' style='border-radius: 8px;'>",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/elina-dev?style=social',
+                    alt: 'github stars'
+                }
+            ],
         }
     ];
     

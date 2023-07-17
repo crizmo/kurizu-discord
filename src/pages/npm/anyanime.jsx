@@ -10,6 +10,16 @@ const AnyAnime = () => {
             time: "12:00",
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/npm/dt/anyanime',
+                    alt: 'npm downloads'
+                },
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/AnyAnime?style=social',
+                    alt: 'github stars'
+                }
+            ],
             message: "AnyAnime is a NPM package that helps you get random anime pfp / images on use . " +
                 "\n It can be used in a discord bot or on a website or anywhere else. " +
                 "\n Currently AnyAnime pkg and api has a database of over 600 unique anime pfps. " +
@@ -25,18 +35,15 @@ const AnyAnime = () => {
                 "\n" +
                 "\n Github Repo : <a href='https://github.com/crizmo/AnyAnime_api'>https://github.com/crizmo/AnyAnime_api</a> " +
                 "\n" +
-                "\n\n Website to the docs: <a href='https://anyanime-npm.netlify.app/'>https://anyanime-npm.netlify.app/</a>" +
-                "\n" +
-                "\n\n <img src='https://img.shields.io/npm/dt/anyanime'>" + "\n  " +
-                "\n <img src='https://img.shields.io/github/stars/crizmo/AnyAnime?style=social'>",
+                "\n\n Website to the docs: <a href='https://anyanime-npm.netlify.app/'>https://anyanime-npm.netlify.app/</a>",
         },
         {
             username: "Kurizu",
             time: "12:00",
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
-            message: "Basic functions of the package : ",
-            image: "https://cdn.discordapp.com/attachments/970974362184343582/1121685938985238568/anyanime.png",
+            message: "Basic functions of the package : " +
+                "\n <img src='https://cdn.discordapp.com/attachments/970974362184343582/1121685938985238568/anyanime.png'>" ,
         },
         {
             username: "Syeca",

@@ -26,12 +26,15 @@ const Emogit = () => {
                 "You can find the source code from the links below:<br>" +
                 "<a href='https://github.com/crizmo/EmoGit' target='_blank'>Github</a><br>" +
                 "<a href='https://emogit.vercel.app/' target='_blank'>Website</a><br>" +
-                "<a href='https://github.com/crizmo/EmoGit'>" +
-                "<img alt='GitHub Repo stars' src='https://img.shields.io/github/stars/crizmo/emogit?style=social'>" +
-                "</a><br><br>" +
                 "If you want to contribute to the project, feel free to open a pull request on GitHub.<br>" +
                 "If you have any suggestions or feedback, feel free to contact me on Discord (kurizu.taz) or " +
-                "<a href='https://discord.gg/drunkbetch-782646778347388959' target='_blank'>Join the Discord Server</a>"
+                "<a href='https://discord.gg/drunkbetch-782646778347388959' target='_blank'>Join the Discord Server</a>",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/EmoGit?style=social',
+                    alt: 'github stars'
+                }
+            ],
         }
     ];
     

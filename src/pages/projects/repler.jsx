@@ -33,7 +33,13 @@ const Repler = () => {
                 "<a href='https://github.com/crizmo/repler'>Github</a><br>" +
                 "<a href='https://repler.vercel.app/'>Website</a><br>" +
                 "<a href='https://repler.vercel.app/status'>Status</a><br>" +
-                "Thank you for checking out Repler!"
+                "Thank you for checking out Repler!",
+            badgeImages: [
+                {
+                    src: 'https://img.shields.io/github/stars/crizmo/repler?style=social',
+                    alt: 'github stars'
+                }
+            ],
         }
     ];
 

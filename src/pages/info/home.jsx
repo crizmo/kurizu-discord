@@ -14,8 +14,8 @@ const Home = () => {
                 "\n I am Kurizu! , I made this website to showcase my projects and links to my socials!" +
                 "\n As you might have already noticed this website looks similar to the discord and thats exactly what i was aiming for." +
                 "\n\n It is completely made with React and Material UI" +
-                "\n The site has a lot of unfinished features but we will get there soon ! ",
-      image: "https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg",
+                "\n The site has a lot of unfinished features but we will get there soon ! " +
+                "\n <img src='https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg'>",
     },
     {
       username: "Kurizu",

@@ -6,8 +6,7 @@ if (window.innerWidth < 600) {
   isMobile = true;
 }
 
-const UserMessage = ({ username, time, avatar, role, message, image }) => {
-
+const UserMessage = ({ username, time, avatar, role, message, badgeImages }) => {
   const regex = /^(1[0-2]|0?[1-9]):[0-5][0-9]$/;
   const is12HourFormat = regex.test(time);
 
@@ -21,7 +20,7 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
     const today = new Date();
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
-    
+
     if (date.toDateString() === today.toDateString()) {
       realTime = "Today at " + date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
     }
@@ -71,9 +70,9 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
             );
           } else if (part.match(imageRegex)) {
             const src = part.match(imageRegex)[0].match(/src=(['"])(.*?)\1/)[2];
-            return <img key={index} src={src} alt="message" style={{ 
+            return <img key={index} src={src} alt="message" style={{
               maxHeight: 'auto',
-              marginTop: '8px', 
+              marginTop: '8px',
               borderRadius: '8px',
               width: '100%',
               height: 'auto',
@@ -146,19 +145,30 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>{realTime}</span>
         </Typography>
         {renderMessageContent()}
-        {image ? (
-          <img
-            src={image}
-            alt="message"
-            style={{ 
-              maxHeight: 'auto',
-              marginTop: '8px', 
-              borderRadius: '8px',
-              width: '100%',
-              height: 'auto',
-              maxWidth: isMobile ? '80vw' : '25vw',
+        {badgeImages ? (
+          <Box
+            sx={{
+              display: 'flex',
+              marginTop: '8px',
             }}
-          />
+          >
+            {badgeImages.map((badge, index) => {
+              return (
+                <img
+                  key={index}
+                  src={badge.src}
+                  alt={badge.alt}
+                  style={{
+                    maxHeight: 'auto',
+                    marginTop: '8px',
+                    height: 'auto',
+                    maxWidth: '25vw',
+                    marginRight: '8px',
+                  }}
+                />
+              );
+            })}
+          </Box>
         ) : null}
       </Box>
     </Box>
