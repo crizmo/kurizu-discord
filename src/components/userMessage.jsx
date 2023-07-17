@@ -71,9 +71,15 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
             );
           } else if (part.match(imageRegex)) {
             const src = part.match(imageRegex)[0].match(/src=(['"])(.*?)\1/)[2];
-            return <img key={index} src={src} alt="message" style={{ maxWidth: '25vw', maxHeight: 'auto', marginTop: '8px', borderRadius: '4px' }} />;
+            return <img key={index} src={src} alt="message" style={{ 
+              maxHeight: 'auto',
+              marginTop: '8px', 
+              borderRadius: '8px',
+              width: '100%',
+              height: 'auto',
+              maxWidth: isMobile ? '80vw' : '25vw',
+            }} />;
           } else if (part.match(iframeRegex)) {
-            // Render the iframe tag
             return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
           }
           else if (part.match(ping)) {
@@ -144,7 +150,14 @@ const UserMessage = ({ username, time, avatar, role, message, image }) => {
           <img
             src={image}
             alt="message"
-            style={{ maxWidth: '25vw', maxHeight: 'auto', marginTop: '8px', borderRadius: '8px' }}
+            style={{ 
+              maxHeight: 'auto',
+              marginTop: '8px', 
+              borderRadius: '8px',
+              width: '100%',
+              height: 'auto',
+              maxWidth: isMobile ? '80vw' : '25vw',
+            }}
           />
         ) : null}
       </Box>
