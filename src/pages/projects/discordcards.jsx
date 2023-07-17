@@ -14,8 +14,9 @@ const DiscordCards = () => {
                 "\n\n" +
                 "<img src='https://cdn.discordapp.com/attachments/988140784807202886/992759894627340298/breeze-stats.png'>" +
                 "\n\n" +
-                "<img src='https://discord-cards.kurizu.repl.co/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg'>" +
-                "\n\n" +
+                "<br><br>" +
+                "<img class='msg-img' src='https://discord-cards.kurizu.repl.co/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg' alt='api'/>" +
+                "<br><br>" +
                 "Discord Cards also offers an API for you to use, so you can incorporate the cards in your GitHub repo or anywhere you want." +
                 "<br><br>" +
                 "GitHub: <a href='https://github.com/crizmo/DiscordCards' alt='Discord Cards github' target='_blank'>Discord Cards</a><br>" +
