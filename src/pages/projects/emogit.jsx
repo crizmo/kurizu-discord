@@ -12,8 +12,8 @@ const Emogit = () => {
             role: "Owner",
             message: "EmoGit is a web-based tool that allows you to easily add emojis to your commit messages. <br>" +
                 "It provides a user-friendly interface that makes it simple and fun to incorporate expressive emojis into your Git workflow. <br><br>" +
-                "You can check out EmoGit <a href='https://emogit.vercel.app/' target='_blank'>https://emogit.vercel.app/</a><br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/1114182354441883658/1114839683772461066/emogit.png' alt='cordle' height='500px' width='auto' style='border-radius: 10px;'><br><br>" +
+                "You can check out EmoGit <a href='https://emogit.vercel.app/' target='_blank'>https://emogit.vercel.app/</a>\n\n" +
+                "<img src='https://cdn.discordapp.com/attachments/1114182354441883658/1114839683772461066/emogit.png'><br><br>" +
                 "EmoGit eliminates the need to remember emoji codes or manually type them in your commit messages. <br>" +
                 "I'm planning on making a desktop app for EmoGit in the future."
         },

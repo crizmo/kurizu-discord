@@ -48,8 +48,8 @@ const Elina = () => {
                 "The website has all the commands and info you need to know about Elina." +
                 "<br>" +
                 "Enjoy!" +
-                "<br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/912537423160942593/912537520150020156/elina_info.jpg' alt='homepgimg' height='150px' width='auto' style='border-radius: 8px;'>",
+                "\n\n" +
+                "<img src='https://cdn.discordapp.com/attachments/912537423160942593/912537520150020156/elina_info.jpg'>",
             badgeImages: [
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/elina-dev?style=social',

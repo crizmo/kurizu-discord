@@ -12,9 +12,9 @@ const Minikey = () => {
             role: "Owner",
             message: "Minikey is a Compact Keyboard design with live user input made using Svelte." +
                 "<br>Check it out if you want: <a href='https://mini-key.kurizu.repl.co/'>https://mini-key.kurizu.repl.co/</a>" +
-                "<br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/1003176063666491452/1003238076950249523/minikey.png' alt='minikey' height='200px' width='auto' style='border-radius: 10px;' />" +
-                "<br><br>" +
+                "\n\n\n" +
+                "<img src='https://cdn.discordapp.com/attachments/1003176063666491452/1003238076950249523/minikey.png'>" +
+                "\n\n\n" +
                 "This is the base design of Minikey." +
                 "<br>I plan on adding a 3D key look to the keyboard in the near future, as well as an RGB effect." +
                 "<br>If you want to help me, feel free to join me on the <a href='https://github.com/crizmo/Mini-Key'>repo</a>.",

@@ -15,9 +15,9 @@ const Cordle = () => {
                 "This makes Cordle a fun and challenging way to test your knowledge of programming terminology and improve your vocabulary in this area." +
                 "<br><br>" +
                 "You can play Cordle at <a href='https://cordle.vercel.app/' target='_blank'>https://cordle.vercel.app</a>" +
-                "<br><br>" +
-                "<img class='msg-img' src='https://cdn.discordapp.com/attachments/1090594675670384731/1090594995876155392/cordle.png' alt='cordle' height='200px' width='auto' style='border-radius: 10px;' />" +
-                "<br><br>" +
+                "\n\n" +
+                "<img src='https://cdn.discordapp.com/attachments/1090594675670384731/1090594995876155392/cordle.png'>" +
+                "\n\n" +
                 "Currently, words are manually added to the game, but I'm planning to add a feature to add words to the game from the game itself.",
         },
         {
