@@ -25,6 +25,7 @@ const channels = [
             { id: 11, name: 'Type3D', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/type3d' },
             { id: 12, name: 'Pixit', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/pixit' },
             { id: 13, name: 'Repler', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/repler' },
+            { id: 19, name: 'Pptgen', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/pptgen' },
         ],
     },
     {

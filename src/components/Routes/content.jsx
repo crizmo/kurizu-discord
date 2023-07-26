@@ -18,6 +18,7 @@ import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
 import Repler from "../../pages/projects/repler";
+import Pptgen from "../../pages/projects/pptgen";
 
 // NPM
 import AnyAnime from "../../pages/npm/anyanime";
@@ -50,6 +51,7 @@ const Content = () => {
             <Route path="/type3d" element={<Type3d />} />
             <Route path="/pixit" element={<Pixit />} />
             <Route path="/repler" element={<Repler />} />
+            <Route path="/pptgen" element={<Pptgen />} />
 
             {/* NPM */}
             <Route path="/anyanime" element={<AnyAnime />} />
