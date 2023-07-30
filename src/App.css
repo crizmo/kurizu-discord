@@ -1,13 +1,13 @@
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #1a1b1e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #1a1b1e;
 }
 
 .sliding-pane-left {
