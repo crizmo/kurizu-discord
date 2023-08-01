@@ -1,19 +1,32 @@
-## Discord-themed website
+# Discord-Themed Website
 
-Discord desktop app themed portfolio website made using React and Vite!
+![Kurizu](https://cdn.discordapp.com/attachments/977949070893125632/1130465364946468937/site.png)
 
-<div style="border-radius: 50px; overflow: hidden;">
-  <img src="https://cdn.discordapp.com/attachments/977949070893125632/1130465364946468937/site.png" alt="Kurizu" style="width: 100%;">
-</div>
+## Introduction
 
-## Code
+Welcome to my Discord-themed website! This website showcases my projects, skills, and experiences in the world of web development. The design is inspired by the popular Discord desktop application, and the website is built using React and Vite.
 
-If you have any feedback, bugs, or suggestions, feel free to open an issue on GitHub or contact me on Discord. <br>
-My Discord username is `kurizu.taz`!
+## Features
 
-## Links 
-- [Website](https://kurizu.vercel.app/)
-- [Discord](https://discord.gg/VcMPV8vc2x)
+- Discord-inspired theme: The website's design takes inspiration from the aesthetics of the Discord desktop application, creating a unique and familiar user experience.
+- Channels: Can customize the channels that are displayed on the sidebar.
+- Threads: Threads like the ones discord has.
+
+## How to Use
+
+To view the website, simply visit the following link: [kurizu.vercel.app](https://kurizu.vercel.app/)
+
+## Feedback and Contact
+
+I value your feedback! If you have any suggestions, find any bugs, or want to get in touch, you can do so through the following channels:
+
+- GitHub: Open an issue on [GitHub](https://github.com/crizmo/kurizu) to report bugs or provide suggestions.
+- Discord: Reach out to me on Discord using the username `kurizu.taz`.
 
 ## License
-This project is licensed under the MIT license!
+
+This project is open-source and licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+---
+
+Feel free to reach out to me if you have any questions or just want to chat about something you can connect with me on Discord!
