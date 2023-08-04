@@ -43,9 +43,9 @@ const users = [
     },
     {
         id: 7,
-        username: 'chikn_man',
-        avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1121657883164160051/chicken_man4.jpeg',
-        roles: ['Poop Eater'],
+        username: 'chicken.poop',
+        avatar: 'https://cdn.discordapp.com/avatars/844689790075011083/baac9006dd249a6e4c01f361fa076c27',
+        roles: ['Code'],
         about: 'Poop'
     },
     {
