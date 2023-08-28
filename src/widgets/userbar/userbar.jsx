@@ -23,7 +23,7 @@ const User = ({ username, avatar, roles, about }) => {
                     fontSize: '0.9rem',
                     fontWeight: 'semibold',
                     fontFamily: 'GG Sans, sans-serif',
-                    color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#40c4fb' : '#878e95',
+                    color: roles.includes('Admin') ? '#d28cfa' : roles.includes('Owner') ? '#00fff9' : '#878e95',
                 }}
 
                 >{username}</Typography>

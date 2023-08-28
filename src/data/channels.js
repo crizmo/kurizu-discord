@@ -10,7 +10,8 @@ const channels = [
     {
         category: '⭐ General',
         channels: [
-            { id: 4, name: 'General', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/general' }
+            { id: 4, name: 'General', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/general' },
+            { id: 20, name: 'Drawings', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/drawings' },
         ],
     },
     {
@@ -38,7 +39,6 @@ const channels = [
             { id: 18, name: 'CustomJS', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/customjs' },
         ],
     },
-
 ];
 
 export default channels;
