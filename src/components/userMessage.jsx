@@ -76,7 +76,7 @@ const UserMessage = ({ username, time, avatar, role, message, badgeImages }) => 
               borderRadius: '8px',
               width: '100%',
               height: 'auto',
-              maxWidth: isMobile ? '80vw' : '25vw',
+              maxWidth: isMobile ? '100vw' : '25vw',
             }} />;
           } else if (part.match(iframeRegex)) {
             return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
@@ -137,7 +137,7 @@ const UserMessage = ({ username, time, avatar, role, message, badgeImages }) => 
               role === 'Admin'
                 ? '#d28cfa'
                 : role === 'Owner'
-                  ? '#40c4fb'
+                  ? '#00fff9'
                   : '#878e95',
           }}
         >

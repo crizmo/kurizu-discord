@@ -7,6 +7,7 @@ import About from "../../pages/info/about";
 
 // general
 import General from "../../pages/general/general";
+import Drawings from "../../pages/general/drawings";
 
 // projects
 import DiscordCards from "../../pages/projects/discordcards";
@@ -40,6 +41,7 @@ const Content = () => {
 
             {/* general */}
             <Route path="/general" element={<General />} />
+            <Route path="/drawings" element={<Drawings />} />
 
             {/* projects */}
             <Route path="/discordcards" element={<DiscordCards />} />
