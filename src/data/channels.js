@@ -21,7 +21,7 @@ const channels = [
             { id: 6, name: 'Elina', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/elina' },
             { id: 7, name: 'Cordle', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/cordle' },
             { id: 8, name: 'Timely', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/timely' },
-            { id: 9, name: 'Emogit', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/emogit' },
+            { id: 9, name: 'EmojiCo', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/emojico' },
             { id: 10, name: 'Minikey', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/minikey' },
             { id: 11, name: 'Type3D', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/type3d' },
             { id: 12, name: 'Pixit', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/pixit' },

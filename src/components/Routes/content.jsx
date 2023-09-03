@@ -14,7 +14,7 @@ import DiscordCards from "../../pages/projects/discordcards";
 import Elina from "../../pages/projects/elina";
 import Cordle from "../../pages/projects/cordle";
 import Timely from "../../pages/projects/timely";
-import Emogit from "../../pages/projects/emogit";
+import Emojico from "../../pages/projects/emojico";
 import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
@@ -48,7 +48,7 @@ const Content = () => {
             <Route path="/elina" element={<Elina />} />
             <Route path="/cordle" element={<Cordle />} />
             <Route path="/timely" element={<Timely />} />
-            <Route path="/emogit" element={<Emogit />} />
+            <Route path="/emojico" element={<Emojico />} />
             <Route path="/minikey" element={<Minikey />} />
             <Route path="/type3d" element={<Type3d />} />
             <Route path="/pixit" element={<Pixit />} />
