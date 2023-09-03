@@ -14,7 +14,7 @@ const Cordle = () => {
                 "<br>" +
                 "This makes Cordle a fun and challenging way to test your knowledge of programming terminology and improve your vocabulary in this area." +
                 "<br><br>" +
-                "You can play Cordle at <a href='https://cordle.vercel.app/' target='_blank'>https://cordle.vercel.app</a>" +
+                "You can play Cordle at <a href='https://cordle.vercel.app/'>https://cordle.vercel.app</a>" +
                 "\n\n" +
                 "<img src='https://cdn.discordapp.com/attachments/1090594675670384731/1090594995876155392/cordle.png'>" +
                 "\n\n" +
@@ -29,14 +29,14 @@ const Cordle = () => {
                 "<br>" +
                 "You can find the source code from the links below:" +
                 "<br><br>" +
-                "<a href='https://github.com/crizmo/Cordle' target='_blank'>Github</a>" +
+                "<a href='https://github.com/crizmo/Cordle'>Github</a>" +
                 "<br>" +
-                "<a href='https://cordle.vercel.app/' target='_blank'>Website</a>" +
+                "<a href='https://cordle.vercel.app/'>Website</a>" +
                 "<br><br>" +
                 "If you want to contribute to the project, feel free to open a pull request on Github." +
                 "<br>" +
                 "If you have any suggestions or feedback, feel free to contact me on Discord (kurizu.taz) or <br>" +
-                "<a href='https://discord.gg/drunkbetch-782646778347388959' target='_blank'>Join the Discord Server</a>",
+                "<a href='https://discord.gg/drunkbetch-782646778347388959'>Join the Discord Server</a>",
             badgeImages: [
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/Cordle?style=social',
