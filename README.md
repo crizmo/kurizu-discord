@@ -1,6 +1,6 @@
 # Discord-Themed Website
 
-![Kurizu](https://cdn.discordapp.com/attachments/977949070893125632/1130465364946468937/site.png)
+![Kurizu](https://cdn.discordapp.com/attachments/977949070893125632/1146130289257631834/overview.png)
 
 ## Introduction
 
@@ -11,6 +11,7 @@ Welcome to my Discord-themed website! This website showcases my projects, skills
 - Discord-inspired theme: The website's design takes inspiration from the aesthetics of the Discord desktop application, creating a unique and familiar user experience.
 - Channels: Can customize the channels that are displayed on the sidebar.
 - Threads: Threads like the ones discord has.
+- Users: Server Users list
 
 ## How to Use
 
