@@ -12,6 +12,10 @@ Welcome to my Discord-themed website! This website showcases my projects, skills
 - Channels: Can customize the channels that are displayed on the sidebar.
 - Threads: Threads like the ones discord has.
 - Users: Server Users list
+- Reactions: Reactions like the ones discord has but on set Messages.
+
+## ToDo
+- [ ] Updates Channel
 
 ## How to Use
 
