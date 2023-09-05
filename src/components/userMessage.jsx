@@ -1,21 +1,82 @@
-import React from 'react';
-import { Box, Typography, Avatar } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Box, Typography, Avatar, Button } from '@mui/material';
+import { supabase } from '../data/supabase';
 
 let isMobile = false;
 if (window.innerWidth < 600) {
   isMobile = true;
 }
 
-const UserMessage = ({ username, time, avatar, role, message, badgeImages }) => {
+const UserMessage = ({ username, time, avatar, role, message, badgeImages, reactions }) => {
   const regex = /^(1[0-2]|0?[1-9]):[0-5][0-9]$/;
   const is12HourFormat = regex.test(time);
+
+  const [reactionData, setReactionData] = useState(null);
+
+  const handleReaction = async (emoji) => {
+    if (reactionData && reactionData.some((reaction) => reaction.emoji === emoji)) {
+      const { data, error } = await supabase
+        .from('reactions')
+        .update({ count: reactionData.find((reaction) => reaction.emoji === emoji).count + 1 })
+        .eq('message', message)
+        .eq('emoji', emoji);
+
+      if (error) {
+        // console.error('Error updating reaction:', error);
+      } else {
+        // console.log('Successfully updated reaction:', data);
+      }
+    } else {
+      const { data, error } = await supabase
+        .from('reactions')
+        .insert([
+          {
+            message: message,
+            emoji: emoji,
+            count: 1,
+          },
+        ]);
+
+      if (error) {
+        // console.error('Error adding reaction:', error);
+      } else {
+        // console.log('Successfully added reaction:', data);
+      }
+    }
+
+    fetchReactionData(emoji);
+  };
+
+  const fetchReactionData = async (emoji) => {
+    try {
+      const { data, error } = await supabase
+        .from('reactions')
+        .select('*')
+        .eq('message', message)
+
+      if (error) {
+        // console.error('Error fetching reaction data:', error);
+      } else {
+        if (data.length > 0) {
+          setReactionData(data);
+        } else {
+          setReactionData(null);
+        }
+      }
+    } catch (error) {
+      // console.error('Error fetching reaction data:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchReactionData();
+  }, []);
 
   let realTime = ""
 
   if (is12HourFormat) {
     realTime = "Today at " + time;
   } else {
-    // the time is like 2023-06-25T14:14:43.509Z so we need to convert it to Today at 2:14 PM or Yesterday at 2:14 PM or 25/06/2023 at 2:14 PM
     const date = new Date(time);
     const today = new Date();
     const yesterday = new Date(today);
@@ -145,6 +206,56 @@ const UserMessage = ({ username, time, avatar, role, message, badgeImages }) => 
           <span style={{ marginLeft: '0.5rem', color: 'grey', fontSize: '0.8rem' }}>{realTime}</span>
         </Typography>
         {renderMessageContent()}
+        {reactions ? (
+          <Box
+            sx={{
+              display: 'flex',
+              marginTop: '8px',
+            }}
+          >
+            {reactions.map((reaction, index) => {
+              return (
+                <Box
+                  key={index}
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginRight: '8px',
+                    backgroundColor: '#353b53',
+                    border: '1px solid #476cec',
+                    borderRadius: '10px',
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => handleReaction(reaction.emoji)}
+                    sx={{
+                      backgroundColor: 'transparent',
+                      border: 'none',
+                      boxShadow: 'none',
+                      paddingTop: '3px',
+                      paddingBottom: '3px',
+                      paddingLeft: '8px',
+                      paddingRight: '8px',
+                      minWidth: '0px',
+                      '&:hover': {
+                        backgroundColor: 'transparent',
+                        border: 'none',
+                        boxShadow: 'none',
+                      },
+                    }}
+                  >
+                    {reaction.emoji} {reactionData
+                      ? reactionData.find((reactionData) => reactionData.emoji === reaction.emoji)?.count
+                      : reaction.count}
+                  </Button>
+                </Box>
+              );
+            })}
+          </Box>
+        ) : null}
         {badgeImages ? (
           <Box
             sx={{

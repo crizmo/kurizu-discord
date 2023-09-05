@@ -16,6 +16,7 @@ const CompleteMessage = ({ messages }) => {
                         role={message.role}
                         message={message.message}
                         badgeImages={message.badgeImages ? message.badgeImages : null}
+                        reactions={message.reactions ? message.reactions : null}
                     />
                 </Box>
             ))}
