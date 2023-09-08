@@ -39,6 +39,12 @@ const Drawings = () => {
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
             message: "<img src='" + link + "'>",
+            reactions: [
+                {
+                    emoji: '👀',
+                    count: 1
+                }
+            ]
         })
     }
 
