@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import CompleteMessage from '../../components/completeMessage';
 
 const drawingLinks = [
+    "https://cdn.discordapp.com/attachments/1135916648847646790/1149695918828945488/d15.png?width=348&height=424",
     "https://media.discordapp.net/attachments/977949070893125632/1145699722917597337/d7.png?width=348&height=424",
     "https://media.discordapp.net/attachments/977949070893125632/1145699722649153577/d6.png?width=339&height=424",
     "https://media.discordapp.net/attachments/977949070893125632/1145699722393288785/d5.png?width=424&height=424",
@@ -21,8 +22,6 @@ const drawingLinks = [
 ]
 
 const Drawings = () => {
-    // instead of this we can use a for loop to loop through the drawingLinks array and add the images
-
     const messages = [
         {
             username: "Kurizu",
