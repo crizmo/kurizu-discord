@@ -20,6 +20,7 @@ import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
 import Repler from "../../pages/projects/repler";
 import Pptgen from "../../pages/projects/pptgen";
+import StreamSavers from "../../pages/projects/streamsavers";
 
 // NPM
 import AnyAnime from "../../pages/npm/anyanime";
@@ -48,6 +49,7 @@ const Content = () => {
             <Route path="/elina" element={<Elina />} />
             <Route path="/cordle" element={<Cordle />} />
             <Route path="/timely" element={<Timely />} />
+            <Route path="/streamsavers" element={<StreamSavers />} />
             <Route path="/emojico" element={<Emojico />} />
             <Route path="/minikey" element={<Minikey />} />
             <Route path="/type3d" element={<Type3d />} />

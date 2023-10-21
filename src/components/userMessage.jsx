@@ -124,7 +124,9 @@ const UserMessage = ({ username, time, avatar, role, message, badgeImages, react
                             text-decoration: none;
                             font-weight: bold;
                             cursor: pointer;    
-                        ">${content}</a>`;
+                        "
+                        target="_blank"
+                        >${content}</a>`;
                   }),
                 }}
               />
