@@ -38,6 +38,10 @@ const Repler = () => {
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/repler?style=social',
                     alt: 'github stars'
+                },
+                {
+                    src: 'https://img.shields.io/github/forks/crizmo/repler?style=social',
+                    alt: 'github forks'
                 }
             ],
         }
