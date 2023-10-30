@@ -14,7 +14,7 @@ const Repler = () => {
                 "\n" +
                 "Keep your Repl.it projects alive with this simple Repl pinger." +
                 "\n\n" +
-                "Repler willping your repl every 25 minutes to keep it alive." +
+                "Repler will ping your repl every 25 minutes to keep it alive." +
                 "\n" +
                 "If you want to use Repler, you can do so by :-\n\n" +
                 "<img src='https://cdn.discordapp.com/attachments/1127935019080486914/1127935050042851499/usage.png' >" +
