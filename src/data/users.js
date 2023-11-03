@@ -3,7 +3,13 @@ const users = [
         id: 1,
         username: 'Kurizu',
         avatar: 'https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png',
-        roles: ['Owner'],
+        banner: 'https://static-cdn.jtvnw.net/jtv_user_pictures/05e98ac2-9766-4645-9e96-ed8b6ad4a9da-profile_banner-480.jpeg',
+        roles: [
+            'Owner', 
+            'Admin', 
+            'User', 
+            'Code',
+        ],
         about: 'I like to code :D'
     },
     {
