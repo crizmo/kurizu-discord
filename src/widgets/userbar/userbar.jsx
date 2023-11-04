@@ -3,22 +3,28 @@ import { Box, Typography, Avatar } from '@mui/material';
 
 import users from '../../data/users';
 
-const User = ({ username, avatar, banner, roles, about, onUserClick }) => {
+const User = ({ username, avatar, banner, roles, status, about, onUserClick }) => {
     const handleClick = (event) => {
-        const { top, height } = event.target.getBoundingClientRect(); // Get the top and height of the user element
+        const { top, height } = event.target.getBoundingClientRect(); 
         onUserClick({
             username,
             avatar,
             banner,
             roles,
+            status,
             about,
-            top, // Pass the top position
-            height, // Pass the height
+            top, 
+            height, 
         });
     };
 
+    let isMobile = false;
+    if (window.innerWidth < 800) {
+        isMobile = true;
+    }
+
     return (
-        <div onClick={handleClick}>
+        <div onClick={isMobile ? null : handleClick}>
             <Box
                 sx={{
                     display: 'flex',
@@ -58,7 +64,7 @@ const User = ({ username, avatar, banner, roles, about, onUserClick }) => {
                             fontFamily: 'GG Sans, sans-serif',
                         }}
                     >
-                        {about}
+                        {status}
                     </Typography>
                 </Box>
             </Box>
@@ -83,7 +89,7 @@ const UserBar = () => {
 
     const isMobile = window.innerWidth <= 768;
 
-    const openUserPanel = ({ username, avatar, banner, roles, about, top, height }) => {
+    const openUserPanel = ({ username, avatar, banner, roles, status, about, top, height }) => {
         const spaceAbove = top;
         const spaceBelow = window.innerHeight - (top + height);
         let panelPosition;
@@ -101,7 +107,7 @@ const UserBar = () => {
         panelPosition.top = Math.max(0, panelPosition.top);
         panelPosition.bottom = Math.max(0, panelPosition.bottom);        
         
-        setSelectedUser({ username, avatar, banner, roles, about, position: panelPosition });
+        setSelectedUser({ username, avatar, banner, roles, status, about, position: panelPosition });
     };
     
 
@@ -109,10 +115,15 @@ const UserBar = () => {
         setSelectedUser(null);
     };
 
-    // close the user panel when the user clicks outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target.closest('.user-panel')) {
+            return;
+        }
+        closeUserPanel();
+    });
 
     return (
-        <Box width="100%" height={isMobile ? '100vh' : '95vh'} bgcolor="#2b2d31" color="white" overflow="auto">
+        <Box className="user-panel" width="100%" height={isMobile ? '100vh' : '95vh'} bgcolor="#2b2d31" color="white" overflow="auto">
             {Object.entries(categorizedUsers).map(([role, users]) => (
                 <React.Fragment key={role}>
                     <Typography
@@ -133,6 +144,7 @@ const UserBar = () => {
                             avatar={user.avatar}
                             banner={user.banner ?? 'https://wallpapercave.com/uwp/uwp369872.png'}
                             roles={user.roles}
+                            status={user.status}
                             about={user.about}
                             onUserClick={openUserPanel}
                         />
@@ -145,7 +157,6 @@ const UserBar = () => {
                     color="white"
                     p={1}
                     position="absolute"
-                    // top={selectedUser.top + selectedUser.height - 40}
                     top={selectedUser.position.top - 40}
                     bottom={selectedUser.position.bottom}
                     right="0"
@@ -159,7 +170,7 @@ const UserBar = () => {
                         style={{
                             height: '18%',
                             width: '100%',
-                            backgroundColor: '#7289DA', // Discord's primary color
+                            backgroundColor: '#7289DA', 
                             borderTopLeftRadius: '8px',
                             borderTopRightRadius: '8px',
                             position: 'relative',
@@ -176,12 +187,12 @@ const UserBar = () => {
                             width: '80px',
                             height: '80px',
                             borderRadius: '50%',
-                            backgroundColor: 'white', // Set this to the background color of the user's avatar
-                            border: '4px solid #7289DA', // Discord's primary color
+                            backgroundColor: 'white', 
+                            border: '4px solid #2b2d31', 
                             position: 'absolute',
-                            top: '12%', // Adjust as needed
-                            left: '20%', // Center the avatar
-                            transform: 'translateX(-50%)', // Center the avatar horizontally
+                            top: '12%', 
+                            left: '20%', 
+                            transform: 'translateX(-50%)', 
                         }}
                         src={selectedUser.avatar}
                         alt="avatar"
@@ -219,14 +230,23 @@ const UserBar = () => {
                             {selectedUser.username}
                         </Typography>
                         <Typography variant="body1" sx={{ fontSize: '0.8rem', fontWeight: 'normal' }}>
-                            wot
+                            {selectedUser.status}
                         </Typography>
                         <hr style={{ width: '100%', marginTop: '1rem', marginBottom: '1rem', backgroundColor: '#28292e' }} />
                         <Typography variant="body1" sx={{ fontSize: '0.9rem', fontWeight: 'bold', paddingBottom: '0.5rem' }}>
                             ABOUT ME
                         </Typography>
-                        <Typography variant="body1" sx={{ fontSize: '0.8rem', fontWeight: 'normal' }}>
-                            {selectedUser.about}
+                        <Typography variant="body1" sx={{ fontSize: '0.8rem', fontWeight: 'normal', wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+                            <div dangerouslySetInnerHTML={{ __html: selectedUser.about }} />
+                            <style jsx>{`
+                                a {
+                                    color: #7289da;
+                                    text-decoration: none;
+                                }
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                            `}</style>
                         </Typography>
 
 
