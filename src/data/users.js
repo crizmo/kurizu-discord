@@ -19,7 +19,7 @@ const users = [
         avatar: 'https://cdn.discordapp.com/avatars/806015103198822401/a7224a4e4806e4fa9d694e2c5ca31e70.webp',
         roles: ['Admin'],
         about: 'Online',
-        status: 'Fart'
+        status: 'Hi !'
     },
     {
         id: 3,
