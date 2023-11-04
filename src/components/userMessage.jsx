@@ -180,6 +180,10 @@ const UserMessage = ({ username, time, avatar, role, message, badgeImages, react
         borderLeft: message.includes('@everyone') || message.includes('@here') ? '2px solid #e9a645' : 'none',
         paddingLeft: message.includes('@everyone') || message.includes('@here') ? '15px' : '15px',
         marginRight: '8px',
+
+        '&:hover': {
+          backgroundColor: '#2e3035',
+        },
       }}
     >
       <Avatar
