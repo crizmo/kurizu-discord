@@ -48,10 +48,10 @@ const User = ({ username, avatar, banner, roles, status, about, onUserClick }) =
                             fontSize: '0.9rem',
                             fontWeight: 'semibold',
                             fontFamily: 'GG Sans, sans-serif',
-                            color: roles.includes('Admin')
-                                ? '#d28cfa'
-                                : roles.includes('Owner')
-                                    ? '#00fff9'
+                            color: roles.includes('Owner')
+                                ? '#00fff9'
+                                : roles.includes('Admin')
+                                    ? '#d28cfa'
                                     : '#878e95',
                         }}
                     >
