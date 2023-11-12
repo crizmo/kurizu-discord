@@ -1,6 +1,7 @@
 # Discord-Themed Website
 
-![Kurizu](https://cdn.discordapp.com/attachments/977949070893125632/1146130289257631834/overview.png)
+![Kurizu](https://github.com/crizmo/kurizu/assets/83665497/af4733e1-6672-424d-b11e-8fed31669748)
+
 
 ## Introduction
 
@@ -13,6 +14,7 @@ Welcome to my Discord-themed website! This website showcases my projects, skills
 - Threads: Threads like the ones discord has.
 - Users: Server Users list
 - Reactions: Reactions like the ones discord has but on set Messages.
+- Discord user preview
 
 ## ToDo
 - [ ] Updates Channel
