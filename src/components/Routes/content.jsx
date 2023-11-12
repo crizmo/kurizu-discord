@@ -13,6 +13,7 @@ import Drawings from "../../pages/general/drawings";
 import DiscordCards from "../../pages/projects/discordcards";
 import Elina from "../../pages/projects/elina";
 import Cordle from "../../pages/projects/cordle";
+import Pinscrape from "../../pages/projects/pinscrape";
 import Timely from "../../pages/projects/timely";
 import Emojico from "../../pages/projects/emojico";
 import Minikey from "../../pages/projects/minikey";
@@ -48,6 +49,7 @@ const Content = () => {
             <Route path="/discordcards" element={<DiscordCards />} />
             <Route path="/elina" element={<Elina />} />
             <Route path="/cordle" element={<Cordle />} />
+            <Route path="/pinscrape" element={<Pinscrape />} />
             <Route path="/timely" element={<Timely />} />
             <Route path="/streamsavers" element={<StreamSavers />} />
             <Route path="/emojico" element={<Emojico />} />
