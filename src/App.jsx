@@ -18,6 +18,8 @@ import "react-sliding-pane/dist/react-sliding-pane.css";
 
 import { useState } from "react";
 
+import { Analytics } from '@vercel/analytics/react';
+
 import "./App.css";
 
 function App() {
@@ -67,6 +69,7 @@ function App() {
 
   return (
     <Router>
+      <Analytics />
       {!isMobile ? (
         <Box width="100vw" display="flex" className="App" overflow="hidden" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
           <Box flexBasis="4.5rem" className="sidebar">
