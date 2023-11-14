@@ -36,6 +36,7 @@ const Server = ({ isActive, serverName, serverIcon }) => {
           "&:hover": {
             borderRadius: '30%',
           },
+          cursor: 'pointer',
         }}
         onMouseEnter={() => setHoveredServer(true)}
         onMouseLeave={() => setHoveredServer(false)}

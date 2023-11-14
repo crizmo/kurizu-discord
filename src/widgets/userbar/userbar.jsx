@@ -31,6 +31,7 @@ const User = ({ username, avatar, banner, roles, status, about, onUserClick }) =
                     alignItems: 'center',
                     padding: '0px 8px 8px 8px',
                     marginLeft: '8px',
+                    cursor: 'pointer',
                 }}
             >
                 <Avatar
