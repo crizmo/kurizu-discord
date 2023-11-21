@@ -7,6 +7,14 @@ const threads = [
         parentEndpoint: '/xlsx-mongo',
         navigateTo: '/xlsx-mongo/api'
     },
+    {
+        id: 2,
+        name: 'Rapid-API',
+        unreadCount: 0,
+        isActive: false,
+        parentEndpoint: '/pinscrape',
+        navigateTo: '/pinscrape/rapid-api'
+    }
 ];
 
 export default threads;

@@ -32,6 +32,7 @@ import CustomJs from "../../pages/npm/customjs";
 
 /* Threads */
 import XlsxApi from "../../pages/npm/threads/xlsxapi";
+import PinscrapeApi from "../../pages/projects/threads/pinscrape_api";
 
 const Content = () => {
     return (
@@ -68,6 +69,7 @@ const Content = () => {
 
             {/* Threads */}
             <Route path="/xlsx-mongo/api" element={<XlsxApi />} />
+            <Route path="/pinscrape/rapid-api" element={<PinscrapeApi />} />
         </Routes>
     );
 }

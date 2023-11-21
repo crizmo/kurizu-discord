@@ -17,7 +17,9 @@ const Pinscrape = () => {
                 "<br /> - Extract URLs of images in a Pinterest board. " +
                 "<br /> - Save the extracted URLs to a JSON file. " +
                 "<br><br>" +
-                "You can check pinscrape at <a href='https://pinscrape.onrender.com/'>https://pinscrape.onrender.com/</a>" +
+                "<img src='https://cdn.discordapp.com/attachments/1173127843476148264/1176391261679259649/pinscrape_points.png?ex=656eb2bd&is=655c3dbd&hm=04b7d9b71ef2bcc22fa40aec26a9961081d6482401e134b28279602e43fb5833&' />" +
+                "<br><br>" +
+                "You can check pinscrape at <a href='https://pinscrape.onrender.com/'>pinscrape.onrender.com</a>" +
                 "\n\n" +
                 "Currently, the API is only available for public boards, pins. ",
         },
@@ -32,6 +34,8 @@ const Pinscrape = () => {
                 "<br><br>" +
                 "<a href='https://github.com/crizmo/pinscrape'>Github</a>" +
                 "<br>" +
+                "<a href='https://rapidapi.com/Kurizu/api/pinscrape/'>Rapid API</a>" +
+                "<br>" +
                 "<a href='https://pinscrape.onrender.com/'>Render</a>" +
                 "<br><br>" +
                 "If you want to contribute to the project, feel free to open a pull request on Github." +
@@ -42,10 +46,6 @@ const Pinscrape = () => {
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/pinscrape?style=social',
                     alt: 'github stars'
-                },
-                {
-                    src: 'https://img.shields.io/github/last-commit/crizmo/pinscrape',
-                    alt: 'github last commit'
                 },
                 {
                     src: 'https://img.shields.io/github/license/crizmo/pinscrape',
