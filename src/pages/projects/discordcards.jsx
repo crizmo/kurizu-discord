@@ -19,9 +19,9 @@ const DiscordCards = () => {
                 "<br><br>" +
                 "Discord Cards also offers an API for you to use, so you can incorporate the cards in your GitHub repo or anywhere you want." +
                 "<br><br>" +
-                "GitHub: <a href='https://github.com/crizmo/DiscordCards' alt='Discord Cards github'>Discord Cards</a><br>" +
-                "Website: <a href='https://discord-cards.vercel.app/' alt='Discord Cards website'>Discord Cards</a><br>" +
-                "API: <a href='https://discord-cards.onrender.com/' alt='Discord Cards api'>Discord Cards API</a><br>",
+                "GitHub: <a href='https://github.com/crizmo/DiscordCards'>Discord Cards</a><br>" +
+                "Website: <a href='https://discord-cards.vercel.app/'>Discord Cards</a><br>" +
+                "API: <a href='https://discord-cards.onrender.com/'>Discord Cards API</a><br>",
             badgeImages: [
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/DiscordCards?style=social',
