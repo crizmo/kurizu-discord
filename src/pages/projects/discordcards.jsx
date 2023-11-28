@@ -15,13 +15,13 @@ const DiscordCards = () => {
                 "<img src='https://cdn.discordapp.com/attachments/988140784807202886/992759894627340298/breeze-stats.png'>" +
                 "\n\n" +
                 "<br><br>" +
-                "<img class='msg-img' src='https://discord-cards.kurizu.repl.co/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg' alt='api'/>" +
+                "<img class='msg-img' src='https://discord-cards.onrender.com/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg' alt='api'/>" +
                 "<br><br>" +
                 "Discord Cards also offers an API for you to use, so you can incorporate the cards in your GitHub repo or anywhere you want." +
                 "<br><br>" +
                 "GitHub: <a href='https://github.com/crizmo/DiscordCards' alt='Discord Cards github'>Discord Cards</a><br>" +
                 "Website: <a href='https://discord-cards.vercel.app/' alt='Discord Cards website'>Discord Cards</a><br>" +
-                "API: <a href='https://discord-cards.kurizu.repl.co/' alt='Discord Cards api'>Discord Cards API</a><br>",
+                "API: <a href='https://discord-cards.onrender.com/' alt='Discord Cards api'>Discord Cards API</a><br>",
             badgeImages: [
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/DiscordCards?style=social',
