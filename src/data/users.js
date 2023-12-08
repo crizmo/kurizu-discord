@@ -56,7 +56,7 @@ const users = [
     {
         id: 7,
         username: 'chicken.poop',
-        avatar: 'https://cdn.discordapp.com/avatars/844689790075011083/baac9006dd249a6e4c01f361fa076c27',
+        avatar: 'https://cdn.discordapp.com/attachments/1121657823986733077/1182539685847904256/chicken_man8.png?ex=658510e7&is=65729be7&hm=895b2b313d3dd1b9590dd3d2d23c38a07253795dde518aa8cc3c379e9f5488f3&',
         roles: ['Code'],
         about: 'Online',
         status: 'Poop'
