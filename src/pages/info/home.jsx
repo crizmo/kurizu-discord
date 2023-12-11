@@ -11,38 +11,31 @@ const Home = () => {
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
       message: "Hello World! " +
-        "\n I am Kurizu! , I made this website to showcase my projects and links to my socials!" +
-        "\n As you might have already noticed this website looks similar to the discord and thats exactly what i was aiming for." +
-        "\n\n It is completely made with React and Material UI" +
-        "\n The site has a lot of unfinished features but we will get there soon ! " +
-        "\n <img src='https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg'>",
+        "\n I'm Kurizu , This is my simple website on the internet 🌟" +
+        "\n Aim was to make it look like discord i'm not sure if i did it well but i tried my best !" +
+        "\n\n The site has a lot of unfinished features but we will get there soon ! " +
+        "\n <img src='https://camo.githubusercontent.com/e33ad8dbd69feb19d295fbc3e2b72ea5ba9ad6f66ae83d669ec1772004ee55e3/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3937303937343238323638313330373138372f313131303438323338313631393539373335332f6769746875625f62672e706e67'>",
+      reactions: [
+        {
+          emoji: '👋',
+          count: 1
+        },
+        {
+          emoji: '👀',
+          count: 1
+        },
+      ]
     },
     {
       username: "Kurizu",
       time: "12:00",
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
-      message: "The issue with the old website [ if you have seen it ] was it was just bad" +
-        "\n It was made using svelte , u can say i had skill issue when i made it" +
-        "\n\n So i decided to remake it using React and Vite , and here we are !" +
-        "\n Hope you like it !",
-      reactions: [
-        {
-          emoji: '🔥',
-          count: 1
-        },
-        {
-          emoji: '🚀',
-          count: 1
-        },
-      ]
-    },
-    {
-      username: "Syeca",
-      time: "1:00",
-      avatar: "https://cdn.discordapp.com/avatars/782653471354650684/ace466bef93d7804a041e1ca6a5ac942.webp",
-      role: "Admin",
-      message: "Epik",
+      message: "Check out the About channel to know more about me." +
+        "\nThat's all for now ig ! " +
+        "\nThanks for checking out my website ! " +
+        "\n\n" +
+        "Ugh I should add more stuff here but idk what to add 🙊",
     },
   ];
 

@@ -11,6 +11,7 @@ const Announcements = () => {
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
       message: "@everyone \n Hello World! " +
+        "\n Some of my projects, npm packages are listed here but if you want to check out other stuff do check out my github!" +
         "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
       reactions: [
         {
@@ -22,16 +23,6 @@ const Announcements = () => {
           count: 1
         },
       ]
-    },
-    {
-      username: "Kurizu",
-      time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
-      role: "Owner",
-      message: "The issue with the old website [ if you have seen it ] was it was just bad" +
-        "\n It was made using svelte , u can say i had skill issue when i made it" +
-        "\n\n So i decided to remake it using React and Vite , and here we are !" +
-        "\n Hope you like it !",
     },
     {
       username: "Syeca",

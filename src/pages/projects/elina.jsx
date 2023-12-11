@@ -11,8 +11,9 @@ const Elina = () => {
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
             message: "Elina is a multipurpose discord bot made using discord.js!" +
-                "<br><br>" +
+                "<br>" +
                 "Elina offers a lot of features, mainly games, Genshin stats, chatbot, and many more commands." +
+                "<br><br> Elina is current in 95+ servers and has 10000+ users!" +
                 "<br>" +
                 "You can find more about it on <a href='https://elina-bot.netlify.app/commands.html'>Elina's website</a>" +
                 "<br><br>" +
