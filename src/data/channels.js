@@ -19,7 +19,7 @@ const channels = [
         channels: [
             { id: 5, name: 'Discord Cards', unreadCount: 1, ping: 0, isActive: false, navigateTo: '/discordcards' },
             { id: 6, name: 'Elina', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/elina' },
-            { id: 13, name: 'Repler', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/repler' },
+            { id: 13, name: 'PingPal', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/pingpal' },
             { id: 22, name: 'Pinscrape', unreadCount: 1, ping: 0, isActive: false, navigateTo: '/pinscrape' },
             { id: 7, name: 'Cordle', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/cordle' },
             { id: 8, name: 'Timely', unreadCount: 0, ping: 0, isActive: false, navigateTo: '/timely' },

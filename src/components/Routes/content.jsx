@@ -19,7 +19,7 @@ import Emojico from "../../pages/projects/emojico";
 import Minikey from "../../pages/projects/minikey";
 import Type3d from "../../pages/projects/type3d";
 import Pixit from "../../pages/projects/pixit";
-import Repler from "../../pages/projects/repler";
+import PingPal from "../../pages/projects/pingpal";
 import Pptgen from "../../pages/projects/pptgen";
 import StreamSavers from "../../pages/projects/streamsavers";
 
@@ -57,7 +57,7 @@ const Content = () => {
             <Route path="/minikey" element={<Minikey />} />
             <Route path="/type3d" element={<Type3d />} />
             <Route path="/pixit" element={<Pixit />} />
-            <Route path="/repler" element={<Repler />} />
+            <Route path="/pingpal" element={<PingPal />} />
             <Route path="/pptgen" element={<Pptgen />} />
 
             {/* NPM */}
