@@ -10,7 +10,7 @@ const users = [
             'User', 
             'Code',
         ],
-        about: 'Kuri 🐈 <a href="https://kurizu.vercel.app/" target="_blank">kurizu.vercel.app</a> <br /><br/> Feel free to follow me on GitHub at <a href="https://github.com/crizmo" target="_blank">https://github.com/crizmo</a> <br/><br/> <img src="https://discord-cards.kurizu.repl.co/api/compact/784141856426033233?about=Gotta%20love%20oligarchy&banner=https://i.etsystatic.com/40957748/r/il/e4efaa/4810125152/il_fullxfull.4810125152_23ir.jpg" style="width: 100%; height: auto;" />',
+        about: 'Kuri 🐈 <a href="https://kurizu.vercel.app/" target="_blank">kurizu.vercel.app</a> <br /><br/> Feel free to follow me on GitHub at <a href="https://github.com/crizmo" target="_blank">https://github.com/crizmo</a> <br/><br/> <img src="https://discord-cards.onrender.com/api/compact/784141856426033233?about=Gotta%20love%20oligarchy&banner=https://i.etsystatic.com/40957748/r/il/e4efaa/4810125152/il_fullxfull.4810125152_23ir.jpg" style="width: 100%; height: auto;" />',
         status: 'I like to code :D'
     },
     {
