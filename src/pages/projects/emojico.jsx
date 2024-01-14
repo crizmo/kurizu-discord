@@ -33,7 +33,23 @@ const Emojico = () => {
             time: "12:00",
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
-            message: "Oh, and the code is open source too! <br>" +
+            message: "Oh also, you can use EmojiCo in your browser as an extension! <br>" +
+                "As of now it's only available Firefox, but I'm planning on adding support for other browsers as well. <br><br>" +
+                "<a href='https://addons.mozilla.org/en-US/firefox/addon/emojico/'>EmojiCo Extension on Firefox</a><br>",
+            reactions: [
+                {
+                    emoji: '🔥',
+                    count: 1
+                }
+            ]
+
+        },
+        {
+            username: "Kurizu",
+            time: "12:00",
+            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            role: "Owner",
+            message: "And the code is open source too! <br>" +
                 "You can find the source code from the links below:<br>" +
                 "<a href='https://github.com/crizmo/EmojiCo'>Github</a><br>" +
                 "<a href='https://emojico.vercel.app'>Website</a><br>" +

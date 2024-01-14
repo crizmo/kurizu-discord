@@ -14,7 +14,7 @@ const Home = () => {
         "\n I'm Kurizu , This is my simple website on the internet 🌟" +
         "\n Aim was to make it look like discord i'm not sure if i did it well but i tried my best !" +
         "\n\n The site has a lot of unfinished features but we will get there soon ! " +
-        "\n <img src='https://camo.githubusercontent.com/e33ad8dbd69feb19d295fbc3e2b72ea5ba9ad6f66ae83d669ec1772004ee55e3/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3937303937343238323638313330373138372f313131303438323338313631393539373335332f6769746875625f62672e706e67'>",
+        "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
       reactions: [
         {
           emoji: '👋',
