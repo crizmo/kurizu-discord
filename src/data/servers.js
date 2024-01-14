@@ -21,7 +21,7 @@ const servers = [
       id: 4, isActive: false,
       serverName: 'Instagram',
       serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/1121772789263765585/instagram.png',
-      navigate: 'https://www.instagram.com/criz_595/'
+      navigate: 'https://www.instagram.com/kurizu_taz/'
     },
     {
       id: 5, isActive: false,
