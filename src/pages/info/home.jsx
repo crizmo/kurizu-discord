@@ -11,7 +11,7 @@ const Home = () => {
       avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
       role: "Owner",
       message: "Hello World! " +
-        "\n I'm Kurizu , This is my simple website on the internet 🌟" +
+        "\n I'm Kurizu , This is my simple little space on the internet 🌟" +
         "\n Aim was to make it look like discord i'm not sure if i did it well but i tried my best !" +
         "\n\n The site has a lot of unfinished features but we will get there soon ! " +
         "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
