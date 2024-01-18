@@ -29,6 +29,22 @@ const Timely = () => {
             time: "12:00",
             avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
             role: "Owner",
+            message: "Oh also, you can use Timely in your browser as an extension! <br>" +
+                "As of now it's only available Firefox, but I'm planning on adding support for other browsers as well. <br><br>" +
+                "<a href='https://addons.mozilla.org/en-US/firefox/addon/daytasks/'>Timely Extension on Firefox</a><br>",
+            reactions: [
+                {
+                    emoji: '🔥',
+                    count: 1
+                }
+            ]
+
+        },
+        {
+            username: "Kurizu",
+            time: "12:00",
+            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            role: "Owner",
             message: "Timely project links: \n\n" +
                 "<a href='https://github.com/crizmo/Timely'>Github</a><br>" +
                 "<a href='https://timely-note.vercel.app/'>Website</a><br><br>" +
