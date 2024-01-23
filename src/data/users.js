@@ -48,7 +48,7 @@ const users = [
     {
         id: 6,
         username: 'coding398',
-        avatar: 'https://cdn.discordapp.com/avatars/626618189450838027/451d6abf0fb1b7850ba08d29cbb60978.webp?size=1024',
+        avatar: 'https://coding398.dev/muffin.jpg',
         roles: ['Code'],
         about: 'Online',
         status: "G'day lads"
