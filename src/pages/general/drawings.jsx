@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import CompleteMessage from '../../components/completeMessage';
 
 const drawingLinks = [
+    "https://pbs.twimg.com/media/GGeQthGawAAq0oH?format=jpg&name=small",
     "https://pbs.twimg.com/media/GDoIr9zbEAALS0w?format=jpg&name=small",
     "https://pbs.twimg.com/media/GCc8KXRbUAA3nh3?format=jpg&name=large",
 
