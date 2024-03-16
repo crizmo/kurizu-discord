@@ -8,7 +8,7 @@ const Elina = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "Elina is a multipurpose discord bot made using discord.js!" +
                 "<br>" +
@@ -29,14 +29,12 @@ const Elina = () => {
                 "\n" +
                 "Just another multipurpose Discord bot among the millions out there." +
                 "\n" +
-                "There's nothing too different that I do compared to all the major Discord bots out there, lol" +
-                "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/939799133177384993/978893594125561916/commands.png'>"
+                "There's nothing too different that I do compared to all the major Discord bots out there, lol",
         },
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "Oh, and Elina is open source too!" +
                 "<br>" +

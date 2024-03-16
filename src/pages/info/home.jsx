@@ -8,13 +8,13 @@ const Home = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
       role: "Owner",
       message: "Hello World! " +
         "\n I'm Kurizu , This is my simple little space on the internet 🌟" +
         "\n Aim was to make it look like discord i'm not sure if i did it well but i tried my best !" +
         "\n\n The site has a lot of unfinished features but we will get there soon ! " +
-        "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
+        "\n <img src='https://github.com/crizmo/crizmo/assets/83665497/133ae790-015e-426e-acef-2102eb443ab3'>",
       reactions: [
         {
           emoji: '👋',
@@ -29,7 +29,7 @@ const Home = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
       role: "Owner",
       message: "Check out the About channel to know more about me." +
         "\nThat's all for now ig ! " +

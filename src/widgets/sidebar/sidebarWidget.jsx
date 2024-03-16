@@ -89,7 +89,7 @@ const SidebarWidget = () => {
           cursor: 'pointer',
           margin: "0px 13px 13px 13px",
         }}>
-          <img src="https://cdn.discordapp.com/attachments/977949070893125632/1121303247714537552/discordlogo.png" alt="My Server" width="45vw" height="auto" style={{
+          <img src="https://avatars.githubusercontent.com/u/114001528?s=64&v=4" alt="My Server" width="45vw" height="auto" style={{
             borderRadius: '100px',
             marginTop: "10px"
           }} />

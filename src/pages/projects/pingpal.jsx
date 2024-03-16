@@ -8,7 +8,7 @@ const PingPal = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message:
 
@@ -27,7 +27,7 @@ const PingPal = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "PingPal project links: \n\n" +
                 "<a href='https://github.com/crizmo/PingPal'>Github</a><br>" +

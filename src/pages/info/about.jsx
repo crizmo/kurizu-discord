@@ -8,7 +8,7 @@ const About = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
       role: "Owner",
       message: "Now a little about me :D" + 
                 "\n I am Kurizu! , Currently exploring the world of coding" +
@@ -21,7 +21,7 @@ const About = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
       role: "Owner",
       message: "If you want to see some of my other projects, check out my GitHub page: <a href='https://github.com/crizmo/'>Github</a>" +
                 "\n\n I also have a discord server , if you want to join :" +

@@ -8,7 +8,7 @@ const Emojico = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "EmojiCo is a web-based tool that allows you to easily add emojis to your commit messages. <br>" +
                 "It provides a user-friendly interface that makes it simple and fun to incorporate expressive emojis into your Git workflow. <br><br>" +
@@ -31,7 +31,7 @@ const Emojico = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "Oh also, you can use EmojiCo in your browser as an extension! <br>" +
                 "As of now it's only available Firefox, but I'm planning on adding support for other browsers as well. <br><br>" +
@@ -47,7 +47,7 @@ const Emojico = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "And the code is open source too! <br>" +
                 "You can find the source code from the links below:<br>" +

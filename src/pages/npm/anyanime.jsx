@@ -8,7 +8,7 @@ const AnyAnime = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             badgeImages: [
                 {
@@ -40,7 +40,7 @@ const AnyAnime = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
             role: "Owner",
             message: "Basic functions of the package : " +
                 "\n <img src='https://cdn.discordapp.com/attachments/970974362184343582/1121685938985238568/anyanime.png'>" ,

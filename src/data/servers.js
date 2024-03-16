@@ -2,7 +2,7 @@ const servers = [
     {
       id: 1, isActive: true,
       serverName: 'Kurizu',
-      serverIcon: 'https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png',
+      serverIcon: 'https://avatars.githubusercontent.com/u/83665497?v=4',
       navigate: '/'
     },
     {
@@ -20,25 +20,25 @@ const servers = [
     {
       id: 4, isActive: false,
       serverName: 'Instagram',
-      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/1121772789263765585/instagram.png',
+      serverIcon: 'https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png',
       navigate: 'https://www.instagram.com/kurizu_taz/'
     },
     {
       id: 5, isActive: false,
       serverName: 'Twitter',
-      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/999254025302200380/unknown.png',
+      serverIcon: 'https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1710547200&semt=ais',
       navigate: 'https://twitter.com/KurizuTaz'
     },
     {
       id: 6, isActive: false,
       serverName: 'Replit',
-      serverIcon: 'https://media.discordapp.net/attachments/977949070893125632/999255947564285972/replit.png',
+      serverIcon: 'https://cdn.worldvectorlogo.com/logos/replit.svg',
       navigate: 'https://replit.com/@kurizu'
     },
     {
       id: 7, isActive: false,
       serverName: 'NPM',
-      serverIcon: 'https://cdn.discordapp.com/attachments/977949070893125632/1126373174188191744/npm-logo.png',
+      serverIcon: 'https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-wm0mnkz6.png',
       navigate: 'https://www.npmjs.com/~kurizu'
     },
   ];

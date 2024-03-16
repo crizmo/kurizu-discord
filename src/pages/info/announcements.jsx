@@ -8,11 +8,11 @@ const Announcements = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/attachments/970974282681307187/1119105882194726952/kurizutaz.png",
+      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
       role: "Owner",
       message: "@everyone \n Hello World! " +
         "\n Some of my projects, npm packages are listed here but if you want to check out other stuff do check out my github!" +
-        "\n <img src='https://cdn.discordapp.com/attachments/970974282681307187/1126568283588530176/wow.png'>",
+        "\n <img src='https://64.media.tumblr.com/ef54d660ef19b41539113af32810aade/tumblr_ptr93kR27V1xkr0iao1_540.gif'>",
       reactions: [
         {
           emoji: '👋',
@@ -34,7 +34,7 @@ const Announcements = () => {
     {
       username: "Pocky",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/avatars/806015103198822401/a7224a4e4806e4fa9d694e2c5ca31e70.webp",
+      avatar: "https://cdn.discordapp.com/avatars/806015103198822401/0f737c2c92a15ad7fe6e0455776fb92e.png",
       role: "Admin",
       message: "Oh btw if you want to be on the right side user list or want a message on the website" +
         "\n You can join the discord server and tell me to do so !" +
