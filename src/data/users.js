@@ -2,7 +2,7 @@ const users = [
     {
         id: 1,
         username: 'Kurizu',
-        avatar: 'https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png',
+        avatar: 'https://avatars.githubusercontent.com/u/83665497?v=4',
         banner: 'https://static-cdn.jtvnw.net/jtv_user_pictures/05e98ac2-9766-4645-9e96-ed8b6ad4a9da-profile_banner-480.jpeg',
         roles: [
             'Owner', 
