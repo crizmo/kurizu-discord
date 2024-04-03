@@ -8,7 +8,7 @@ const XlsxMongo = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "With the help of the <a href='https://www.npmjs.com/package/xlsx-mongo'>xlsx-mongo</a> npm package, you can easily import / add excel files to MongoDB." +
                 
@@ -29,7 +29,7 @@ const XlsxMongo = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Usage:" +
             "\n" +
@@ -40,7 +40,7 @@ const XlsxMongo = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord, Instagram or Github"
         }

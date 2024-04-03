@@ -8,7 +8,7 @@ const StreamSavers = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Stream Savers was a free, open-source and easy-to-use service to loop stream 24/7 to YouTube" +
                 "\n\n" +
@@ -19,7 +19,7 @@ const StreamSavers = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Working on this was fun, but we had to shut down the project due to the high costs of running the service." +
                 "<br>" +

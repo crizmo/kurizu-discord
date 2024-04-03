@@ -8,7 +8,7 @@ const PinscrapeApi = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Pinscrape API on Rapid\n" +
                 "A simple image scraper API for Pinterest boards. \n" +
@@ -26,7 +26,7 @@ const PinscrapeApi = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Check the GitHub repo for more info on how to use the API" +
             "<br>Also check out Rapid api for more info on how to use the API" +

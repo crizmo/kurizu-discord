@@ -8,7 +8,7 @@ const Pixit = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Pixit is a simple pixel art website made using EJS and Node.js. I made it as a side project because I was bored." +
                 "<br><br>" +
@@ -19,7 +19,7 @@ const Pixit = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Pixit project links:<br>" +
                 "<a href='https://github.com/crizmo/Pixit'>Github</a><br>" +

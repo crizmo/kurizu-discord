@@ -8,23 +8,24 @@ const drawingLinks = [
     "https://pbs.twimg.com/media/GDoIr9zbEAALS0w?format=jpg&name=small",
     "https://pbs.twimg.com/media/GCc8KXRbUAA3nh3?format=jpg&name=large",
 
-    "https://cdn.discordapp.com/attachments/1135916648847646790/1154747008528162836/d17.png?width=348&height=424",
-    "https://cdn.discordapp.com/attachments/1135916648847646790/1152657019011092611/d16.png?width=348&height=424",
-    "https://cdn.discordapp.com/attachments/1135916648847646790/1149695918828945488/d15.png?width=348&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145699722917597337/d7.png?width=348&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145699722649153577/d6.png?width=339&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145699722393288785/d5.png?width=424&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145699721592197120/d1.png?width=424&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145700853404155944/d10.png?width=339&height=424",
+    "https://i.ibb.co/G5GTgJC/39884b253973.png",
+    "https://i.ibb.co/QCFmM9h/0baec1d5959d.png",
+    "https://i.ibb.co/ggHkW6B/a38356053c0b.png",
+    "https://i.ibb.co/svR7D5Z/02cd5879ccd8.png",
+    "https://i.ibb.co/g95FzXb/b190b0f9a022.png",
+    "https://i.ibb.co/0c4GSTp/0df64d4b8f4d.png",
 
-    "https://media.discordapp.net/attachments/977949070893125632/1145701396759453796/d13.png?width=424&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145701396491010219/d12.png?width=424&height=424",
+    "https://i.ibb.co/HYsqygy/743bbb81e925.png",
+    "https://i.ibb.co/qnrPn3R/a512cf0f2d9f.png",
 
-    "https://media.discordapp.net/attachments/977949070893125632/1145699722158428202/d3.png?width=424&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145701862448840856/d14.png?width=421&height=424",
+    "https://i.ibb.co/dGKjgbx/74d2e5b542b0.png",
+    "https://i.ibb.co/PcXzk00/99b2831e5c34.png",
 
-    "https://media.discordapp.net/attachments/977949070893125632/1145700722252464259/d8.png?width=339&height=424",
-    "https://media.discordapp.net/attachments/977949070893125632/1145700853156687923/d9.png?width=339&height=424",
+    "https://i.ibb.co/WkmLCJP/8e2f5c7e3215.png",
+    "https://i.ibb.co/mhVCYQJ/4442591e99c6.png",
+
+    "https://i.ibb.co/gJBSb8b/b39589cb95f8.png",
+    "https://i.ibb.co/9n41ZWs/a58455340006.png",
 ]
 
 const Drawings = () => {
@@ -32,7 +33,7 @@ const Drawings = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Some of my drawings :",
         },
@@ -42,7 +43,7 @@ const Drawings = () => {
         messages.push({
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "<img src='" + link + "'>",
             reactions: [

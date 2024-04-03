@@ -89,7 +89,7 @@ const SidebarWidget = () => {
           cursor: 'pointer',
           margin: "0px 13px 13px 13px",
         }}>
-          <img src="https://avatars.githubusercontent.com/u/114001528?s=64&v=4" alt="My Server" width="45vw" height="auto" style={{
+          <img src="https://i.pinimg.com/564x/d5/47/d8/d547d8f6287ce9a3f8ab2d34c21c63dd.jpg" alt="My Server" width="45vw" height="auto" style={{
             borderRadius: '100px',
             marginTop: "10px"
           }} />

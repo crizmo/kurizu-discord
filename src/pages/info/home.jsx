@@ -8,7 +8,7 @@ const Home = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+      avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
       role: "Owner",
       message: "Hello World! " +
         "\n I'm Kurizu , This is my simple little space on the internet 🌟" +
@@ -29,7 +29,7 @@ const Home = () => {
     {
       username: "Kurizu",
       time: "12:00",
-      avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+      avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
       role: "Owner",
       message: "Check out the About channel to know more about me." +
         "\nThat's all for now ig ! " +

@@ -8,7 +8,7 @@ const Cordle = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Cordle is a word-guessing game similar to Wordle, but with a twist: all of the words you'll be guessing are related to code and programming." +
                 "<br>" +
@@ -23,7 +23,7 @@ const Cordle = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Oh, and the code is open source too!" +
                 "<br>" +

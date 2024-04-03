@@ -8,7 +8,7 @@ const Jng = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "With the help of the <a href='https://www.npmjs.com/package/jng'>JNG</a> npm package, you can easily convert .jpg url's to .png url's and vice versa." +
                 "<br>Basically it uploads images to cloudinary then while receiving the url, it converts the image to the desired format." +
@@ -29,7 +29,7 @@ const Jng = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Usage:" +
             "\n" +

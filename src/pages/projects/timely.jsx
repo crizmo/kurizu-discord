@@ -8,7 +8,7 @@ const Timely = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Timely-Note" +
                 "\n" +
@@ -27,7 +27,7 @@ const Timely = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Oh also, you can use Timely in your browser as an extension! <br>" +
                 "As of now it's only available Firefox, but I'm planning on adding support for other browsers as well. <br><br>" +
@@ -43,7 +43,7 @@ const Timely = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Timely project links: \n\n" +
                 "<a href='https://github.com/crizmo/Timely'>Github</a><br>" +

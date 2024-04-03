@@ -8,7 +8,7 @@ const Image2Url = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "With the help of the <a href='https://www.npmjs.com/package/image2url'>image2url</a> npm package, you can easily convert images to URLs." +
                 "<br><br>Post images to a Discord channel and get the proxy URL. I would appreciate contributions to the project." +
@@ -29,7 +29,7 @@ const Image2Url = () => {
         {
             username: "Kurizu",
             time: "12:00",
-            avatar: "https://cdn.discordapp.com/avatars/784141856426033233/f01a415c7d59a50a68796f8fb2e7f18b.png",
+            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Usage:" +
                 "\n" +
