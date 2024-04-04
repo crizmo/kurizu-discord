@@ -31,14 +31,8 @@ const CustomJs = () => {
             time: "12:00",
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
-            message: "Functions :" +
-                "\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1127644093950984242/1127644124678471880/functions.png'>" +
-                "\n\n\n" +
-                "Additionals :" +
-                "\n<img src='https://cdn.discordapp.com/attachments/1127644093950984242/1127644332866941020/stuff.png'>" +
-                "\n\n" +
-                "\nIf you want more information, you can check out the <a href='https://github.com/crizmo/customjs'>GitHub</a> page." +
+            message: 
+                "If you want more information, you can check out the <a href='https://github.com/crizmo/customjs'>GitHub</a> page." +
                 "\n\n" +
                 "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord, Instagram or Github"
         }

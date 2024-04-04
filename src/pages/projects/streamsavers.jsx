@@ -11,9 +11,7 @@ const StreamSavers = () => {
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Stream Savers was a free, open-source and easy-to-use service to loop stream 24/7 to YouTube" +
-                "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/970974581944885268/980031303967703040/stream-savers.png'>" +
-                "\n\n\n" +
+                "\n" +
                 "Me and my friend, <a href='https://coding398.dev'>Coding398</a>, created this project to help streamers who want to stream 24/7 to YouTube.",
         },
         {

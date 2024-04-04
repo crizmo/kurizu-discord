@@ -13,7 +13,7 @@ const Emojico = () => {
             message: "EmojiCo is a web-based tool that allows you to easily add emojis to your commit messages. <br>" +
                 "It provides a user-friendly interface that makes it simple and fun to incorporate expressive emojis into your Git workflow. <br><br>" +
                 "You can check out EmojiCo <a href='https://emojico.vercel.app'>https://emojico.vercel.app</a>\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1114182354441883658/1147939219453517844/emojico.png'><br><br>" +
+                "<img src='https://i.ibb.co/Gs1WBHn/561979c09808.png'><br><br>" +
                 "EmojiCo eliminates the need to remember emoji codes or manually type them in your commit messages. <br>" +
                 "I'm planning on making a desktop app for EmojiCo in the future.",
             reactions: [

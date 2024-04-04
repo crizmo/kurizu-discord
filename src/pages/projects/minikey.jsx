@@ -13,7 +13,7 @@ const Minikey = () => {
             message: "Minikey is a Compact Keyboard design with live user input made using Svelte." +
                 "<br>Check it out if you want: <a href='https://mini-key.kurizu.repl.co/'>https://mini-key.kurizu.repl.co/</a>" +
                 "\n\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1003176063666491452/1003238076950249523/minikey.png'>" +
+                "<img src='https://user-images.githubusercontent.com/83665497/180825143-80506268-a467-4bbd-b92f-eb19d66eea07.png'>" +
                 "\n\n\n" +
                 "This is the base design of Minikey." +
                 "<br>I plan on adding a 3D key look to the keyboard in the near future, as well as an RGB effect." +

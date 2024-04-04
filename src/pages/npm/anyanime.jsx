@@ -43,7 +43,7 @@ const AnyAnime = () => {
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
             message: "Basic functions of the package : " +
-                "\n <img src='https://cdn.discordapp.com/attachments/970974362184343582/1121685938985238568/anyanime.png'>" ,
+                "\n <img src='https://i.ibb.co/L1gN9VF/41a34af8ef5c.png'>" ,
         },
         {
             username: "Syeca",

@@ -10,14 +10,16 @@ const DiscordCards = () => {
             time: "12:00",
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
-            message: "Discord Cards helps you display your discord activity as an epic card that you can use anywhere you want." +
+            message: 
+                "<img class='msg-img' src='https://i.ibb.co/TYmHr34/30be2b851697.png' alt='api'/>" +
+                "<br><br>" +
+                "Discord Cards helps you display your discord activity as an epic card that you can use anywhere you want." +
                 "<br><br>" +
                 "<img class='msg-img' src='https://discord-cards.onrender.com/api/card/784141856426033233?about=Exploring&banner=https://staticg.sportskeeda.com/editor/2022/10/72d24-16655552144135-1920.jpg' alt='api'/>" +
                 "<br><br>" +
-                "Discord Cards also offers an API for you to use, so you can incorporate the cards in your GitHub repo or anywhere you want." +
-                "<br><br>" +
                 "GitHub: <a href='https://github.com/crizmo/DiscordCards'>Discord Cards</a><br>" +
                 "Website: <a href='https://discord-cards.vercel.app/'>Discord Cards</a><br>" +
+                "Discord: <a href='https://discord.gg/drunkbetch-782646778347388959'>Discord Cards</a><br>" +
                 "API: <a href='https://discord-cards.onrender.com/'>Discord Cards API</a><br>",
             badgeImages: [
                 {
@@ -31,7 +33,9 @@ const DiscordCards = () => {
             time: "12:00",
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
-            message: "Thanks for reading!",
+            message: 
+                "Join the discord server to get your own custom card and to get help with the API. \n" +
+                "Thanks for reading!",
         },
 
         

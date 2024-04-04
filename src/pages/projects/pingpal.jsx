@@ -17,7 +17,7 @@ const PingPal = () => {
                 "PingPal will ping your every 25 minutes to keep it alive." +
                 "\n" +
                 "To use PingPal :-\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1127935019080486914/1127935050042851499/usage.png' >" +
+                "<img src='https://i.ibb.co/bFHxkDL/7f5b0690bdc5.png' >" +
                 "\n\n\n" +
                 "Or clone the repo from <a href='https://github.com/crizmo/PingPal'>Github</a> and run it locally :-\n" +
                 "\nOpen an issue if you have any problems." +

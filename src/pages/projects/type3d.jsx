@@ -16,8 +16,6 @@ const Type3d = () => {
                 "\n\n" +
                 "I then added live keyboard input and movements to the keys and the overall keyboard." +
                 "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1014118117493985350/1014118195679993937/type-3d.png' alt='homepgimg' height='auto' width='500px' style='border-radius: 10px;'>" +
-                "\n\n" +
                 "You can find the code <a href='https://github.com/crizmo/Type-3d'>here</a>" +
                 "\n\n" +
                 " Feel free to use the code for your own projects." +

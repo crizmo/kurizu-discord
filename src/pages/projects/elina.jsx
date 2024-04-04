@@ -25,11 +25,14 @@ const Elina = () => {
             time: "12:00",
             avatar: "https://cdn.discordapp.com/avatars/842397001954230303/557d99168d42b845750241d8d7cd0f5b.webp",
             role: "",
-            message: "Hi, I am Elina!" +
+            message: 
+                "<img src='https://i.ibb.co/QbC2jkN/ae9bf6a4e38a.png'> \n" +
+                "\nHi, I am Elina!" +
                 "\n" +
                 "Just another multipurpose Discord bot among the millions out there." +
                 "\n" +
-                "There's nothing too different that I do compared to all the major Discord bots out there, lol",
+                "There's nothing too different that I do compared to all the major Discord bots out there, lol" ,
+                
         },
         {
             username: "Kurizu",
@@ -46,9 +49,7 @@ const Elina = () => {
                 "<br>" +
                 "The website has all the commands and info you need to know about Elina." +
                 "<br>" +
-                "Enjoy!" +
-                "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/912537423160942593/912537520150020156/elina_info.jpg'>",
+                "Enjoy!",
             badgeImages: [
                 {
                     src: 'https://img.shields.io/github/stars/crizmo/elina-dev?style=social',

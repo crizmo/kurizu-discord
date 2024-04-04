@@ -33,11 +33,9 @@ const Jng = () => {
             role: "Owner",
             message: "Usage:" +
             "\n" +
-            "<img src='https://cdn.discordapp.com/attachments/1126205512212553818/1126371532713754796/jng-usage.png'>" +
+            "<img src='https://i.ibb.co/vLgh2Tn/097f3f9c64a3.png'>" +
             "\n\n\n" +
-            "1 - Here tests/test.json - is the path to the image you want to send and it looks like this - " +
-            "\n<img src='https://cdn.discordapp.com/attachments/1126205512212553818/1126372290830024814/testjson.png'>" +
-            "\n\n" +
+            "1 - tests/test.json - is the path of the image that i want to convert " +
             "\n2 - kurizu - is the name that i want to add to the url " +
             "\n3 - png - is the format that i want to convert the image to " +
             "\n4 - anime - is the tag that i want to add to the image " +

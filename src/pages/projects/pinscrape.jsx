@@ -17,8 +17,6 @@ const Pinscrape = () => {
                 "<br /> - Extract URLs of images in a Pinterest board. " +
                 "<br /> - Save the extracted URLs to a JSON file. " +
                 "<br><br>" +
-                "<img src='https://cdn.discordapp.com/attachments/1173127843476148264/1176391261679259649/pinscrape_points.png?ex=656eb2bd&is=655c3dbd&hm=04b7d9b71ef2bcc22fa40aec26a9961081d6482401e134b28279602e43fb5833&' />" +
-                "<br><br>" +
                 "You can check pinscrape at <a href='https://pinscrape.onrender.com/'>pinscrape.onrender.com</a>" +
                 "\n\n" +
                 "Currently, the API is only available for public boards, pins. ",

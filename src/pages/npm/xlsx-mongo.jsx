@@ -31,18 +31,8 @@ const XlsxMongo = () => {
             time: "12:00",
             avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
             role: "Owner",
-            message: "Usage:" +
-            "\n" +
-            "<img src='https://cdn.discordapp.com/attachments/1126788880906080366/1126806763035959346/usage.png'>" +
-            "\n\n" +
-            "<img src='https://cdn.discordapp.com/attachments/1126788880906080366/1126808126922960946/note.png'>"
-        },    
-        {
-            username: "Kurizu",
-            time: "12:00",
-            avatar: "https://avatars.githubusercontent.com/u/83665497?v=4",
-            role: "Owner",
-            message: "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord, Instagram or Github"
+            message: "Check the github repo for more information on how to use the package. \n" +
+            "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord, Instagram or Github"
         }
     ];
     

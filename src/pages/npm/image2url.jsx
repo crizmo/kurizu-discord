@@ -33,7 +33,7 @@ const Image2Url = () => {
             role: "Owner",
             message: "Usage:" +
                 "\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1057946322721849436/1058673207424585738/image.png'>" +
+                "<img src='https://i.ibb.co/4gZc6k7/33df5882f004.png'>" +
                 "\n\n" +
                 "Thanks for reading! If you have any questions or suggestions, feel free to contact me on Discord or Instagram."
         }

@@ -12,9 +12,7 @@ const Pixit = () => {
             role: "Owner",
             message: "Pixit is a simple pixel art website made using EJS and Node.js. I made it as a side project because I was bored." +
                 "<br><br>" +
-                "Check it out if you want: <a href='https://pixit.kurizu.repl.co/'>https://pixit.kurizu.repl.co/</a>" +
-                "<br><br>" +
-                "<img src='https://cdn.discordapp.com/attachments/970974497941368873/977193997267271690/unknown.png' alt='homepgimg' height='200px' width='auto' style='border-radius: 10px;'>"
+                "Check it out if you want: <a href='https://pixit.kurizu.repl.co/'>https://pixit.kurizu.repl.co/</a>",
         },
         {
             username: "Kurizu",

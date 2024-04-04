@@ -16,7 +16,7 @@ const Cordle = () => {
                 "<br><br>" +
                 "You can play Cordle at <a href='https://cordle.vercel.app/'>https://cordle.vercel.app</a>" +
                 "\n\n" +
-                "<img src='https://cdn.discordapp.com/attachments/1090594675670384731/1090594995876155392/cordle.png'>" +
+                "<img src='https://i.ibb.co/25Z37L0/707279dde4fd.png'>" +
                 "\n\n" +
                 "Currently, words are manually added to the game, but I'm planning to add a feature to add words to the game from the game itself.",
         },
