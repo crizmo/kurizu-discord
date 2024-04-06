@@ -13,6 +13,8 @@ const Channel = ({ id, name, unreadCount, ping, handleClick}) => {
     isActivePage = name.toLowerCase() === "home";
   } else if (location.pathname === "/discordcards") {
     isActivePage = name.toLowerCase() === "discord cards";
+  } else if (location.pathname === "/electronscreenshot") {
+    isActivePage = name.toLowerCase() === "electron screenshot";
   }
 
   return (

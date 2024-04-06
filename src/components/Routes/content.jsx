@@ -12,6 +12,7 @@ import Drawings from "../../pages/general/drawings";
 // projects
 import DiscordCards from "../../pages/projects/discordcards";
 import Elina from "../../pages/projects/elina";
+import ElectronSS from "../../pages/projects/electronss";
 import Cordle from "../../pages/projects/cordle";
 import Pinscrape from "../../pages/projects/pinscrape";
 import Timely from "../../pages/projects/timely";
@@ -49,6 +50,7 @@ const Content = () => {
             {/* projects */}
             <Route path="/discordcards" element={<DiscordCards />} />
             <Route path="/elina" element={<Elina />} />
+            <Route path="/electronscreenshot" element={<ElectronSS />} />
             <Route path="/cordle" element={<Cordle />} />
             <Route path="/pinscrape" element={<Pinscrape />} />
             <Route path="/timely" element={<Timely />} />
