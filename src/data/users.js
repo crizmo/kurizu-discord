@@ -56,14 +56,14 @@ const users = [
     {
         id: 7,
         username: 'chicken.poop',
-        avatar: 'https://cdn.discordapp.com/avatars/844689790075011083/850bb4ba8bb680257ad5962e5bb36e3f.png',
+        avatar: 'https://i.ibb.co/fY20mg9/chicken-man8-v2.png',
         roles: ['Code'],
         about: 'Online',
         status: 'Poop'
     },
     {
         id: 8,
-        username: 'Swave',
+        username: 'Hydrogenmacro',
         avatar: 'https://cdn.discordapp.com/avatars/822562547814891592/5cd60b3d45a293daa20f0dd5b07862b5.png',
         roles: ['User'],
         about: 'Online',
@@ -72,7 +72,7 @@ const users = [
     {
         id: 9,
         username: 'Hu Tao',
-        avatar: 'https://cdn.discordapp.com/avatars/803404128600195133/3e089587160f401521f7d1e96e1ac7fe.png',
+        avatar: 'https://i.ibb.co/5KCxf9K/hutaocroppedpfp.jpg',
         roles: ['User'],
         about: 'Online',
         status: 'Simping for Hu Tao'
