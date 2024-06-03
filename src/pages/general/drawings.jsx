@@ -4,6 +4,12 @@ import { Box } from '@mui/material';
 import CompleteMessage from '../../components/completeMessage';
 
 const drawingLinks = [
+    "https://i.ibb.co/64GCG24/5.png",
+    "https://i.ibb.co/Pw7yN5D/4.png",
+    "https://i.ibb.co/5n1pXnh/3.png",
+    "https://i.ibb.co/23MtJQS/2.png",
+    "https://i.ibb.co/rH7JRr8/1.png",
+    
     "https://pbs.twimg.com/media/GMj0-g9XUAApI5z?format=jpg&name=4096x4096",
     "https://pbs.twimg.com/media/GMETa_2WkAA8g_J?format=png&name=small",
 
