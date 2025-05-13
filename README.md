@@ -21,7 +21,7 @@ Welcome to my Discord-themed website! This website showcases my projects, skills
 
 ## How to Use
 
-To view the website, simply visit the following link: [kurizu.vercel.app](https://kurizu.vercel.app/)
+To view the website, simply visit the following link: [kurizu-discord.vercel.app/](https://kurizu-discord.vercel.app)
 
 ## Feedback and Contact
 
