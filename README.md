@@ -27,7 +27,7 @@ To view the website, simply visit the following link: [kurizu.vercel.app](https:
 
 I value your feedback! If you have any suggestions, find any bugs, or want to get in touch, you can do so through the following channels:
 
-- GitHub: Open an issue on [GitHub](https://github.com/crizmo/kurizu) to report bugs or provide suggestions.
+- GitHub: Open an issue on [GitHub](https://github.com/crizmo/kurizu-discord) to report bugs or provide suggestions.
 - Discord: Reach out to me on Discord using the username `kurizu.taz`.
 
 ## License
