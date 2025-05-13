@@ -1,7 +1,5 @@
 # Discord-Themed Website
-
-![Kurizu](https://github.com/crizmo/kurizu/assets/83665497/af4733e1-6672-424d-b11e-8fed31669748)
-
+![image](https://github.com/user-attachments/assets/9acdf85c-7e6a-48fc-953c-282514488e6f)
 
 ## Introduction
 
